@@ -1,0 +1,124 @@
+{
+  "seed": 261007,
+  "results": [
+    {
+      "test": "1D indexed prefix queries vs linear reference",
+      "cases": 12000,
+      "passed": 12000,
+      "failed": 0,
+      "seconds": 0.370883
+    },
+    {
+      "test": "2D indexed prefix queries vs linear reference",
+      "cases": 12000,
+      "passed": 12000,
+      "failed": 0,
+      "seconds": 0.426172
+    },
+    {
+      "test": "3D indexed prefix queries vs linear reference",
+      "cases": 12000,
+      "passed": 12000,
+      "failed": 0,
+      "seconds": 0.503896
+    },
+    {
+      "test": "4D indexed prefix queries vs linear reference",
+      "cases": 12000,
+      "passed": 12000,
+      "failed": 0,
+      "seconds": 0.520144
+    },
+    {
+      "test": "1D indexed Intersection vs all-pairs reference",
+      "cases": 600,
+      "passed": 600,
+      "failed": 0,
+      "seconds": 0.918758
+    },
+    {
+      "test": "2D indexed Intersection vs all-pairs reference",
+      "cases": 600,
+      "passed": 600,
+      "failed": 0,
+      "seconds": 0.927596
+    },
+    {
+      "test": "3D indexed Intersection vs all-pairs reference",
+      "cases": 600,
+      "passed": 600,
+      "failed": 0,
+      "seconds": 0.897577
+    },
+    {
+      "test": "4D indexed Intersection vs all-pairs reference",
+      "cases": 600,
+      "passed": 600,
+      "failed": 0,
+      "seconds": 1.125028
+    },
+    {
+      "test": "1D incremental index add/discard integrity",
+      "cases": 2000,
+      "passed": 2000,
+      "failed": 0,
+      "seconds": 0.092496
+    },
+    {
+      "test": "2D incremental index add/discard integrity",
+      "cases": 2000,
+      "passed": 2000,
+      "failed": 0,
+      "seconds": 0.107692
+    },
+    {
+      "test": "3D incremental index add/discard integrity",
+      "cases": 2000,
+      "passed": 2000,
+      "failed": 0,
+      "seconds": 0.135174
+    },
+    {
+      "test": "4D incremental index add/discard integrity",
+      "cases": 2000,
+      "passed": 2000,
+      "failed": 0,
+      "seconds": 0.148332
+    }
+  ],
+  "pair_stats": [
+    {
+      "dimensions": 1,
+      "trials": 600,
+      "naive_pairs": 153186,
+      "indexed_candidate_pairs": 20892,
+      "candidate_fraction": 0.13638322039873096,
+      "candidate_reduction_fraction": 0.863616779601269
+    },
+    {
+      "dimensions": 2,
+      "trials": 600,
+      "naive_pairs": 152259,
+      "indexed_candidate_pairs": 4481,
+      "candidate_fraction": 0.02943011578954282,
+      "candidate_reduction_fraction": 0.9705698842104572
+    },
+    {
+      "dimensions": 3,
+      "trials": 600,
+      "naive_pairs": 148349,
+      "indexed_candidate_pairs": 706,
+      "candidate_fraction": 0.0047590479207814005,
+      "candidate_reduction_fraction": 0.9952409520792186
+    },
+    {
+      "dimensions": 4,
+      "trials": 600,
+      "naive_pairs": 162357,
+      "indexed_candidate_pairs": 119,
+      "candidate_fraction": 0.0007329526906754868,
+      "candidate_reduction_fraction": 0.9992670473093245
+    }
+  ],
+  "failures": []
+}

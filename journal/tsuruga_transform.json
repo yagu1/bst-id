@@ -1,0 +1,60 @@
+{
+  "input_obj": "tsuruga_20200216_260k.obj",
+  "output_point_cloud": "tsuruga_aligned.ply",
+  "uniform_scale": 3.864,
+  "manual_yaw_deg": -13.64,
+  "pick_north": false,
+  "sample_method": "uniform",
+  "requested_sample_points": 300000,
+  "voxel_downsample_m": 0.1,
+  "coordinate_convention": {
+    "x": "East",
+    "y": "North",
+    "z": "Up",
+    "units": "metres"
+  },
+  "picked_alignment": null,
+  "affine_transform_from_original_OBJ": [
+    [
+      3.755022076184973,
+      0.9112108468205886,
+      0.0,
+      0.0
+    ],
+    [
+      -0.9112108468205886,
+      3.755022076184973,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      3.864,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "final_bounds_m": {
+    "min": [
+      -54.52481981364069,
+      -88.61274954229135,
+      -0.0906084739001792
+    ],
+    "max": [
+      47.57712306518474,
+      55.1255543042729,
+      32.36517049808648
+    ],
+    "extent": [
+      102.10194287882544,
+      143.73830384656426,
+      32.45577897198666
+    ]
+  }
+}

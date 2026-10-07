@@ -5,4 +5,12 @@ dist/
 build/
 venv/
 .DS_store
+journal/aizu_demo/viewer/config.local.js
+# Generated dynamic UTM dataset
+journal/aizu_demo/utm_scenario.json
+journal/tsuruga_native_1m_cesium.json
+journal/aizu_demo/tsuruga_native_1m_cesium.json
 
+# Generated / processed point clouds
+*.ply
+*.obj

@@ -1,0 +1,55 @@
+{
+  "seed": 261015,
+  "reviewer": "Reviewer 1, Comment 5",
+  "results": [
+    {
+      "test": "2D multi-cell Boolean operands",
+      "cases": 1800,
+      "passed": 1800,
+      "failed": 0,
+      "seconds": 2.359064,
+      "reference_oracle": "Dense Boolean atom sets"
+    },
+    {
+      "test": "3D Difference with multiple subtractors",
+      "cases": 600,
+      "passed": 600,
+      "failed": 0,
+      "seconds": 0.615642,
+      "reference_oracle": "Dense set difference"
+    },
+    {
+      "test": "2D anisotropic cross-nested multi-cell overlap",
+      "cases": 1200,
+      "passed": 1200,
+      "failed": 0,
+      "seconds": 0.59271,
+      "reference_oracle": "Dense Boolean atom sets + cross-nesting checks"
+    },
+    {
+      "test": "3D chained Union-Difference-Intersection-Normalize",
+      "cases": 600,
+      "passed": 600,
+      "failed": 0,
+      "seconds": 0.910562,
+      "reference_oracle": "Composed dense atom-set semantics"
+    },
+    {
+      "test": "XYHT conformance negative: XY and T inside, H outside",
+      "cases": 256,
+      "passed": 256,
+      "failed": 0,
+      "seconds": 0.001622,
+      "reference_oracle": "Binary subsumption (expected False)"
+    },
+    {
+      "test": "XYHT conformance negative: XYH inside, T outside",
+      "cases": 256,
+      "passed": 256,
+      "failed": 0,
+      "seconds": 0.002211,
+      "reference_oracle": "Binary subsumption (expected False)"
+    }
+  ],
+  "failures": []
+}

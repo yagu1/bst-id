@@ -1,0 +1,7 @@
+test,cases,passed,failed,seconds,reference_oracle
+2D multi-cell Boolean operands,1800,1800,0,2.359064,Dense Boolean atom sets
+3D Difference with multiple subtractors,600,600,0,0.615642,Dense set difference
+2D anisotropic cross-nested multi-cell overlap,1200,1200,0,0.59271,Dense Boolean atom sets + cross-nesting checks
+3D chained Union-Difference-Intersection-Normalize,600,600,0,0.910562,Composed dense atom-set semantics
+"XYHT conformance negative: XY and T inside, H outside",256,256,0,0.001622,Binary subsumption (expected False)
+"XYHT conformance negative: XYH inside, T outside",256,256,0,0.002211,Binary subsumption (expected False)

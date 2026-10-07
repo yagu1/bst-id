@@ -1,0 +1,500 @@
+{
+  "pipeline": "point cloud -> direct fine BST-ID shell -> BST-ID-index fill -> Normalize",
+  "input": {
+    "ply": "tsuruga_aligned.ply",
+    "transform_json": "tsuruga_enu_anchor_transform.json",
+    "input_points": 280335,
+    "points_after_crop": 157239,
+    "min_u_m": 0.0,
+    "horizontal_crop": null
+  },
+  "georeference": {
+    "anchor_latitude_deg": 37.4874741977344,
+    "anchor_longitude_deg": 139.9299222365892,
+    "height_origin_m": -0.499969482421875,
+    "height_origin_source": "local relative height; U=0 aligned to a BST-ID H boundary",
+    "local_u0_aligned_to_h_boundary": true
+  },
+  "fine_grid": {
+    "zx": 25,
+    "zy": 25,
+    "zh": 15,
+    "raw_shell_cells": 14490,
+    "closed_shell_cells": 17605,
+    "fill_mode": "directional",
+    "require_ns": false,
+    "close_iterations": 1,
+    "interior_cells": 13729,
+    "solid_fine_cells": 31334,
+    "dense_window_shape": [
+      105,
+      156,
+      33
+    ]
+  },
+  "normalization": {
+    "normalizer": "indexed-batch",
+    "normalized_prefixes": 3884,
+    "reduction_fraction": 0.8760451905278611,
+    "reduction_percent": 87.60451905278612,
+    "seconds": 13.902061400000001,
+    "zoom_vectors": [
+      {
+        "zx": 25,
+        "zy": 25,
+        "zh": 15,
+        "count": 892
+      },
+      {
+        "zx": 24,
+        "zy": 25,
+        "zh": 15,
+        "count": 570
+      },
+      {
+        "zx": 25,
+        "zy": 24,
+        "zh": 15,
+        "count": 378
+      },
+      {
+        "zx": 23,
+        "zy": 25,
+        "zh": 15,
+        "count": 291
+      },
+      {
+        "zx": 24,
+        "zy": 24,
+        "zh": 15,
+        "count": 254
+      },
+      {
+        "zx": 23,
+        "zy": 24,
+        "zh": 15,
+        "count": 153
+      },
+      {
+        "zx": 25,
+        "zy": 25,
+        "zh": 14,
+        "count": 153
+      },
+      {
+        "zx": 22,
+        "zy": 25,
+        "zh": 15,
+        "count": 136
+      },
+      {
+        "zx": 24,
+        "zy": 25,
+        "zh": 14,
+        "count": 117
+      },
+      {
+        "zx": 24,
+        "zy": 23,
+        "zh": 15,
+        "count": 100
+      },
+      {
+        "zx": 22,
+        "zy": 24,
+        "zh": 15,
+        "count": 72
+      },
+      {
+        "zx": 24,
+        "zy": 24,
+        "zh": 14,
+        "count": 69
+      },
+      {
+        "zx": 23,
+        "zy": 25,
+        "zh": 14,
+        "count": 66
+      },
+      {
+        "zx": 25,
+        "zy": 23,
+        "zh": 15,
+        "count": 61
+      },
+      {
+        "zx": 23,
+        "zy": 23,
+        "zh": 15,
+        "count": 55
+      },
+      {
+        "zx": 25,
+        "zy": 24,
+        "zh": 14,
+        "count": 55
+      },
+      {
+        "zx": 23,
+        "zy": 24,
+        "zh": 14,
+        "count": 41
+      },
+      {
+        "zx": 21,
+        "zy": 25,
+        "zh": 15,
+        "count": 40
+      },
+      {
+        "zx": 22,
+        "zy": 23,
+        "zh": 15,
+        "count": 37
+      },
+      {
+        "zx": 21,
+        "zy": 24,
+        "zh": 15,
+        "count": 30
+      },
+      {
+        "zx": 22,
+        "zy": 25,
+        "zh": 14,
+        "count": 28
+      },
+      {
+        "zx": 25,
+        "zy": 25,
+        "zh": 13,
+        "count": 28
+      },
+      {
+        "zx": 22,
+        "zy": 24,
+        "zh": 14,
+        "count": 24
+      },
+      {
+        "zx": 24,
+        "zy": 23,
+        "zh": 14,
+        "count": 21
+      },
+      {
+        "zx": 23,
+        "zy": 23,
+        "zh": 14,
+        "count": 18
+      },
+      {
+        "zx": 22,
+        "zy": 23,
+        "zh": 14,
+        "count": 15
+      },
+      {
+        "zx": 21,
+        "zy": 23,
+        "zh": 15,
+        "count": 14
+      },
+      {
+        "zx": 23,
+        "zy": 22,
+        "zh": 15,
+        "count": 14
+      },
+      {
+        "zx": 24,
+        "zy": 25,
+        "zh": 13,
+        "count": 14
+      },
+      {
+        "zx": 25,
+        "zy": 24,
+        "zh": 13,
+        "count": 11
+      },
+      {
+        "zx": 22,
+        "zy": 22,
+        "zh": 15,
+        "count": 9
+      },
+      {
+        "zx": 23,
+        "zy": 25,
+        "zh": 13,
+        "count": 8
+      },
+      {
+        "zx": 24,
+        "zy": 24,
+        "zh": 13,
+        "count": 8
+      },
+      {
+        "zx": 21,
+        "zy": 24,
+        "zh": 14,
+        "count": 7
+      },
+      {
+        "zx": 21,
+        "zy": 25,
+        "zh": 14,
+        "count": 7
+      },
+      {
+        "zx": 23,
+        "zy": 22,
+        "zh": 14,
+        "count": 7
+      },
+      {
+        "zx": 24,
+        "zy": 22,
+        "zh": 15,
+        "count": 7
+      },
+      {
+        "zx": 24,
+        "zy": 23,
+        "zh": 13,
+        "count": 7
+      },
+      {
+        "zx": 21,
+        "zy": 23,
+        "zh": 14,
+        "count": 6
+      },
+      {
+        "zx": 22,
+        "zy": 23,
+        "zh": 13,
+        "count": 6
+      },
+      {
+        "zx": 25,
+        "zy": 23,
+        "zh": 14,
+        "count": 6
+      },
+      {
+        "zx": 22,
+        "zy": 22,
+        "zh": 14,
+        "count": 5
+      },
+      {
+        "zx": 23,
+        "zy": 23,
+        "zh": 13,
+        "count": 5
+      },
+      {
+        "zx": 21,
+        "zy": 22,
+        "zh": 15,
+        "count": 4
+      },
+      {
+        "zx": 22,
+        "zy": 25,
+        "zh": 13,
+        "count": 4
+      },
+      {
+        "zx": 20,
+        "zy": 25,
+        "zh": 15,
+        "count": 3
+      },
+      {
+        "zx": 21,
+        "zy": 22,
+        "zh": 14,
+        "count": 3
+      },
+      {
+        "zx": 20,
+        "zy": 25,
+        "zh": 14,
+        "count": 2
+      },
+      {
+        "zx": 21,
+        "zy": 21,
+        "zh": 14,
+        "count": 2
+      },
+      {
+        "zx": 21,
+        "zy": 24,
+        "zh": 13,
+        "count": 2
+      },
+      {
+        "zx": 22,
+        "zy": 21,
+        "zh": 15,
+        "count": 2
+      },
+      {
+        "zx": 22,
+        "zy": 24,
+        "zh": 13,
+        "count": 2
+      },
+      {
+        "zx": 23,
+        "zy": 24,
+        "zh": 13,
+        "count": 2
+      },
+      {
+        "zx": 24,
+        "zy": 22,
+        "zh": 13,
+        "count": 2
+      },
+      {
+        "zx": 25,
+        "zy": 23,
+        "zh": 13,
+        "count": 2
+      },
+      {
+        "zx": 20,
+        "zy": 24,
+        "zh": 15,
+        "count": 1
+      },
+      {
+        "zx": 21,
+        "zy": 21,
+        "zh": 15,
+        "count": 1
+      },
+      {
+        "zx": 21,
+        "zy": 23,
+        "zh": 13,
+        "count": 1
+      },
+      {
+        "zx": 21,
+        "zy": 25,
+        "zh": 13,
+        "count": 1
+      },
+      {
+        "zx": 22,
+        "zy": 21,
+        "zh": 12,
+        "count": 1
+      },
+      {
+        "zx": 22,
+        "zy": 21,
+        "zh": 14,
+        "count": 1
+      },
+      {
+        "zx": 22,
+        "zy": 22,
+        "zh": 13,
+        "count": 1
+      },
+      {
+        "zx": 23,
+        "zy": 22,
+        "zh": 13,
+        "count": 1
+      },
+      {
+        "zx": 23,
+        "zy": 24,
+        "zh": 12,
+        "count": 1
+      }
+    ]
+  },
+  "maximum_inscribed_cell": {
+    "zx": 22,
+    "ix": 3727451,
+    "zy": 22,
+    "iy": 1625411,
+    "zh": 11,
+    "ih": 1024,
+    "fine_atom_capacity": 1024,
+    "coarsening_bits": {
+      "x": 3,
+      "y": 3,
+      "h": 4
+    },
+    "west": 139.92968559265137,
+    "south": 37.48766298093671,
+    "east": 139.92977142333984,
+    "north": 37.48773108621813,
+    "bottom_u": 0.999969482421875,
+    "top_u": 16.999481201171875,
+    "metric_volume_m3_approx": 919.6249272286674
+  },
+  "minimum_enclosing": {
+    "mode": "minimum_valid_cover",
+    "cell_count": 2,
+    "cells": [
+      {
+        "zx": 16,
+        "ix": 58241,
+        "zy": 15,
+        "iy": 12698,
+        "zh": 15,
+        "ih": 16383,
+        "root_bits": {
+          "x": 1,
+          "y": 0,
+          "h": 0
+        },
+        "west": 139.9273681640625,
+        "south": 37.483576550426996,
+        "east": 139.932861328125,
+        "north": 37.49229399862877,
+        "bottom_u": 0.0,
+        "top_u": 0.999969482421875
+      },
+      {
+        "zx": 16,
+        "ix": 58241,
+        "zy": 15,
+        "iy": 12698,
+        "zh": 10,
+        "ih": 512,
+        "root_bits": {
+          "x": 1,
+          "y": 0,
+          "h": 1
+        },
+        "west": 139.9273681640625,
+        "south": 37.483576550426996,
+        "east": 139.932861328125,
+        "north": 37.49229399862877,
+        "bottom_u": 0.999969482421875,
+        "top_u": 32.998992919921875
+      }
+    ]
+  },
+  "verification": {
+    "requested": true,
+    "passed": true,
+    "fine_atoms": 31334,
+    "normalized_atoms": 31334
+  },
+  "total_seconds": 15.080828599999998
+}

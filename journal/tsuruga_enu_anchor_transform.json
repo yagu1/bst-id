@@ -1,0 +1,92 @@
+{
+  "input_obj": "tsuruga_20200216_260k.obj",
+  "output_point_cloud": "tsuruga_aligned.ply",
+  "source_to_metric": {
+    "uniform_scale_m_per_obj_unit": 3.864,
+    "yaw_deg_about_up": -13.64
+  },
+  "coordinate_convention": {
+    "x": "East",
+    "y": "North",
+    "z": "Up",
+    "units": "metres"
+  },
+  "geographic_anchor": {
+    "latitude_deg": 37.4874741977344,
+    "longitude_deg": 139.9299222365892,
+    "absolute_altitude_m": null,
+    "note": "Absolute altitude is intentionally unspecified at this stage. The picked physical anchor is mapped to local U=anchor_u."
+  },
+  "local_anchor_target_m": {
+    "east": 0.0,
+    "north": 0.0,
+    "up": 0.0
+  },
+  "picked_anchor": {
+    "point_index": 49059,
+    "position_after_scale_and_yaw_before_translation_m": [
+      9.95947677614334,
+      -15.113072418968077,
+      3.5358363178274104
+    ],
+    "position_after_translation_m": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "translation_after_scale_and_yaw_m": [
+    -9.95947677614334,
+    15.113072418968077,
+    -3.5358363178274104
+  ],
+  "affine_transform_original_OBJ_to_local_ENU": [
+    [
+      3.755022076184973,
+      0.9112108468205886,
+      0.0,
+      -9.95947677614334
+    ],
+    [
+      -0.9112108468205886,
+      3.755022076184973,
+      0.0,
+      15.113072418968077
+    ],
+    [
+      0.0,
+      0.0,
+      3.864,
+      -3.5358363178274104
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "sampling": {
+    "method": "uniform",
+    "requested_points": 300000,
+    "voxel_downsample_m": 0.1,
+    "output_points": 280335
+  },
+  "final_bounds_m": {
+    "min": [
+      -64.36663312439458,
+      -73.55352747454594,
+      -3.613950699516719
+    ],
+    "max": [
+      37.6951005742053,
+      70.2928829644934,
+      28.857864751464874
+    ],
+    "extent": [
+      102.06173369859988,
+      143.84641043903935,
+      32.471815450981595
+    ]
+  }
+}

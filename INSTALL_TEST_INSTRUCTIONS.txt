@@ -1,0 +1,164 @@
+BST-ID region_index validation bundle
+=====================================
+
+Target repository:
+  https://github.com/nagasawayuki/bst-id
+
+Reference base used when these files were prepared:
+  f0e447d1af74a5db6372bf26f9ca085771355c96
+
+
+1. Files to add
+---------------
+
+Copy:
+
+  bst_id/region_index.py
+      -> <repository-root>/bst_id/region_index.py
+
+  tests/test_region_index.py
+      -> <repository-root>/tests/test_region_index.py
+
+  journal/run_region_index_validation.py
+      -> <repository-root>/journal/run_region_index_validation.py
+
+
+2. Files that do NOT need modification yet
+------------------------------------------
+
+Do not modify these for the first validation run:
+
+  bst_id/__init__.py
+  bst_id/region_algebra.py
+  journal/run_bst_validation.py
+  setup.py
+  pyproject.toml
+
+Reason:
+  region_index.py imports Cell / meet / normalize directly from region_algebra.py.
+  The new tests import bst_id.region_index directly.
+  setuptools.find_packages() already includes Python modules under bst_id/.
+
+Keeping journal/run_bst_validation.py unchanged also preserves the currently reported
+38,732 validation count until the new indexed tests have been independently verified.
+
+
+3. First run: existing repository regression tests
+--------------------------------------------------
+
+From repository root:
+
+  python -m pytest -q
+
+This should run the existing test suite plus tests/test_region_index.py.
+
+If pytest is not installed:
+
+  python -m pip install pytest
+
+
+4. Run only the new pytest file
+-------------------------------
+
+  python -m pytest -q tests/test_region_index.py
+
+
+5. Run journal-side indexed validation
+--------------------------------------
+
+From repository root:
+
+  python journal/run_region_index_validation.py
+
+Generated files:
+
+  journal/region_index_validation.json
+  journal/region_index_validation_summary.csv
+  journal/region_index_candidate_pairs.csv
+
+The script exits with status 1 if any indexed result differs from the current
+linear/all-pairs reference implementation.
+
+
+6. What the journal-side script validates
+-----------------------------------------
+
+For 1D, 2D, 3D, and 4D presence domains:
+
+A. Prefix-query equivalence
+   - RegionPrefixIndex.subsuming_cells()
+     vs brute-force subsumes(r, query)
+   - RegionPrefixIndex.subsumed_cells()
+     vs brute-force subsumes(query, r)
+   - RegionPrefixIndex.compatible_candidates()
+     vs brute-force compatible(r, query)
+   - RegionPrefixIndex.contains()
+     vs current region_algebra.contains()
+
+B. Intersection equivalence
+   - intersection_indexed(A, B)
+     vs current region_algebra.intersection(A, B)
+
+C. Incremental index integrity
+   - repeated add/discard operations
+   - query results checked after updates
+
+D. Candidate-pair counts
+   - naive pair count: |A| * |B|
+   - indexed compatible candidate-pair count
+
+The candidate-pair CSV is structural evidence only. It must not yet be described
+as a wall-clock speedup result.
+
+
+7. Recommended sequence after tests pass
+----------------------------------------
+
+Step 1:
+  Commit only:
+    bst_id/region_index.py
+    tests/test_region_index.py
+    journal/run_region_index_validation.py
+    generated validation outputs if desired for the research artifact.
+
+Step 2:
+  Confirm:
+    python -m pytest -q
+  reports no regressions.
+
+Step 3:
+  Confirm:
+    python journal/run_region_index_validation.py
+  reports FAILED 0.
+
+Step 4:
+  Only then decide whether to integrate indexed-validation counts into
+  journal/run_bst_validation.py and the manuscript's main correctness table.
+
+Do not immediately add the new cases to the current 38,732 total; keep them
+separate until the exact validation workload and manuscript wording are fixed.
+
+
+8. Optional later API exposure
+------------------------------
+
+After validation, bst_id/__init__.py may optionally expose:
+
+  from .region_index import RegionPrefixIndex, intersection_indexed
+
+This is not required for functionality and is intentionally omitted in the
+first validation step.
+
+
+9. Current scope
+----------------
+
+This bundle indexes:
+  - contains / ancestor-subsumption queries
+  - descendant queries
+  - compatibility candidate retrieval
+  - Intersection candidate enumeration
+
+It does NOT yet replace normalize() with a trie-indexed normalizer.
+Therefore the final normalization step of intersection_indexed() still uses
+the current reference normalize() implementation.

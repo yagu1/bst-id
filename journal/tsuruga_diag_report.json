@@ -1,0 +1,45 @@
+{
+  "input": {
+    "aligned_ply": "tsuruga_aligned.ply",
+    "input_point_count": 280335,
+    "expected_input_point_count_from_stats": 280335,
+    "points_after_u_crop": 157239,
+    "expected_points_after_crop_from_stats": 157239
+  },
+  "pipeline": {
+    "raw_shell_cells": 14490,
+    "expected_raw_shell_cells": 14490,
+    "closed_shell_cells": 17605,
+    "expected_closed_shell_cells": 17605,
+    "closed_added_cells": 3115,
+    "closed_removed_raw_cells": 0,
+    "fill_added_cells": 13729,
+    "solid_cells": 31334,
+    "expected_solid_cells": 31334,
+    "current_cesium_fine_cells": 31334,
+    "reconstructed_vs_current_missing": 0,
+    "reconstructed_vs_current_extra": 0
+  },
+  "normalize": {
+    "normalized_prefix_count": 3884,
+    "expanded_fine_cells": 31334,
+    "missing_fine_cells": 0,
+    "extra_fine_cells": 0,
+    "exact": true
+  },
+  "boundary_diagnostic": {
+    "final_solid_boundary_cells": 12841,
+    "boundary_cells_already_in_raw_shell": 8426,
+    "boundary_cells_in_closed_shell": 9962,
+    "boundary_cells_created_only_by_fill": 2879,
+    "fill_created_boundary_fraction": 0.22420372245152248,
+    "fill_created_exposed_face_counts": {
+      "-h": 2385,
+      "+y": 426,
+      "-y": 348,
+      "+h": 82,
+      "+x": 206,
+      "-x": 206
+    }
+  }
+}

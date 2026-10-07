@@ -1,0 +1,5 @@
+﻿attribute_cardinality,fixed_interval_records,fixed_dyadic_records,normalized_records,normalized_vs_fixed_dyadic_record_ratio
+1,94738,831795,208259,0.250372988536839
+2,12266,95778,30407,0.3174737413602289
+3,595,4025,1493,0.37093167701863355
+4,71,492,201,0.40853658536585363

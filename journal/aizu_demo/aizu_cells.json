@@ -1,0 +1,2601 @@
+{
+  "metadata": {
+    "description": "Aizuwakamatsu BST-ID / Cesium demonstration cells",
+    "xy_zooms": [
+      20,
+      24,
+      28,
+      32
+    ],
+    "h_zoom": 12,
+    "agl_levels_m": [
+      30,
+      50,
+      100
+    ],
+    "display_vertical_half_thickness_m": 10,
+    "ground_elevation": {
+      "minimum_m": 205.4,
+      "maximum_m": 252.9,
+      "difference_m": 47.5
+    },
+    "notes": [
+      "XY bounds are the actual grid-aligned BST-ID/Web-Mercator cell bounds, not a symmetric box around each source point.",
+      "Cesium display height uses the requested AGL center +/- vertical half-thickness.",
+      "The BST-ID H prefix is independently encoded at H zoom 12; its actual altitude interval is also included.",
+      "Ground elevations are input values provided from GSI map elevation readings."
+    ]
+  },
+  "sites": {
+    "uoa_ground": {
+      "name": "University of Aizu Ground",
+      "lat": 37.525440902519996,
+      "lon": 139.9376438416493,
+      "ground_m": 205.4
+    },
+    "aizuwakamatsu_station": {
+      "name": "Aizuwakamatsu Station",
+      "lat": 37.508213401476354,
+      "lon": 139.9305218272644,
+      "ground_m": 214.0
+    },
+    "tsurugajo": {
+      "name": "Tsurugajo Castle",
+      "lat": 37.487060071197305,
+      "lon": 139.93025833564147,
+      "ground_m": 231.5
+    },
+    "iimoriyama_entrance": {
+      "name": "Iimoriyama Entrance",
+      "lat": 37.50447573887954,
+      "lon": 139.9517994364912,
+      "ground_m": 252.9
+    }
+  },
+  "cells": [
+    {
+      "site_id": "uoa_ground",
+      "site_name": "University of Aizu Ground",
+      "source_point": {
+        "latitude": 37.525440902519996,
+        "longitude": 139.9376438416493,
+        "ground_elevation_m": 205.4
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 235.4,
+        "display_bottom_m": 225.4,
+        "display_top_m": 245.4,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "2156449101192194975773",
+        "hex": "0x74e6be382d632c681d",
+        "binary": "0b11101001110011010111110001110000010110101100011001011000110100000011101",
+        "bit_length": 71,
+        "zoom": {
+          "x": 20,
+          "y": 20,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 931885,
+          "y": 406214,
+          "h": 2077
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93732452392578,
+        "east": 139.9376678466797,
+        "south": 37.5252476526747,
+        "north": 37.52551993630742,
+        "h_bottom_m": 232.49292379047256,
+        "h_top_m": 240.4926796517102,
+        "approx_width_m": 30.310475345237247,
+        "approx_height_m": 30.3104753455137,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93732452392578,
+          "south": 37.5252476526747,
+          "east": 139.9376678466797,
+          "north": 37.52551993630742
+        },
+        "height": 225.4,
+        "extrudedHeight": 245.4
+      }
+    },
+    {
+      "site_id": "uoa_ground",
+      "site_name": "University of Aizu Ground",
+      "source_point": {
+        "latitude": 37.525440902519996,
+        "longitude": 139.9376438416493,
+        "ground_elevation_m": 205.4
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 235.4,
+        "display_bottom_m": 225.4,
+        "display_top_m": 245.4,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "556920910341223982975005",
+        "hex": "0x75eebe382de632c6481d",
+        "binary": "0b1110101111011101011111000111000001011011110011000110010110001100100100000011101",
+        "bit_length": 79,
+        "zoom": {
+          "x": 24,
+          "y": 24,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 14910174,
+          "y": 6499428,
+          "h": 2077
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93762493133545,
+        "east": 139.93764638900757,
+        "south": 37.525434847778946,
+        "north": 37.52545186549241,
+        "h_bottom_m": 232.49292379047256,
+        "h_top_m": 240.4926796517102,
+        "approx_width_m": 1.8944031965638117,
+        "approx_height_m": 1.894403196903388,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93762493133545,
+          "south": 37.525434847778946,
+          "east": 139.93764638900757,
+          "north": 37.52545186549241
+        },
+        "height": 225.4,
+        "extrudedHeight": 245.4
+      }
+    },
+    {
+      "site_id": "uoa_ground",
+      "site_name": "University of Aizu Ground",
+      "source_point": {
+        "latitude": 37.525440902519996,
+        "longitude": 139.9376438416493,
+        "ground_elevation_m": 205.4
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 235.4,
+        "display_bottom_m": 225.4,
+        "display_top_m": 245.4,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "143818457798839929942616093",
+        "hex": "0x76f6be382dee632c64a81d",
+        "binary": "0b111011011110110101111100011100000101101111011100110001100101100011001001010100000011101",
+        "bit_length": 87,
+        "zoom": {
+          "x": 28,
+          "y": 28,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 238562798,
+          "y": 103990858,
+          "h": 2077
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93764370679855,
+        "east": 139.93764504790306,
+        "south": 37.52544016581482,
+        "north": 37.52544122942194,
+        "h_bottom_m": 232.49292379047256,
+        "h_top_m": 240.4926796517102,
+        "approx_width_m": 0.11840020400541579,
+        "approx_height_m": 0.11840020326696667,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93764370679855,
+          "south": 37.52544016581482,
+          "east": 139.93764504790306,
+          "north": 37.52544122942194
+        },
+        "height": 225.4,
+        "extrudedHeight": 245.4
+      }
+    },
+    {
+      "site_id": "uoa_ground",
+      "site_name": "University of Aizu Ground",
+      "source_point": {
+        "latitude": 37.525440902519996,
+        "longitude": 139.9376438416493,
+        "ground_elevation_m": 205.4
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 235.4,
+        "display_bottom_m": 225.4,
+        "display_top_m": 245.4,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "37136681612881199532444633117",
+        "hex": "0x77febe382dee1632c64a481d",
+        "binary": "0b11101111111111010111110001110000010110111101110000101100011001011000110010010100100100000011101",
+        "bit_length": 95,
+        "zoom": {
+          "x": 32,
+          "y": 32,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 3817004769,
+          "y": 1663853732,
+          "h": 2077
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93764379061759,
+        "east": 139.93764387443662,
+        "south": 37.525440897044724,
+        "north": 37.52544096352017,
+        "h_bottom_m": 232.49292379047256,
+        "h_top_m": 240.4926796517102,
+        "approx_width_m": 0.007400012727259388,
+        "approx_height_m": 0.007400012555878064,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93764379061759,
+          "south": 37.525440897044724,
+          "east": 139.93764387443662,
+          "north": 37.52544096352017
+        },
+        "height": 225.4,
+        "extrudedHeight": 245.4
+      }
+    },
+    {
+      "site_id": "uoa_ground",
+      "site_name": "University of Aizu Ground",
+      "source_point": {
+        "latitude": 37.525440902519996,
+        "longitude": 139.9376438416493,
+        "ground_elevation_m": 205.4
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 255.4,
+        "display_bottom_m": 245.4,
+        "display_top_m": 265.4,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "2156449101192194975775",
+        "hex": "0x74e6be382d632c681f",
+        "binary": "0b11101001110011010111110001110000010110101100011001011000110100000011111",
+        "bit_length": 71,
+        "zoom": {
+          "x": 20,
+          "y": 20,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 931885,
+          "y": 406214,
+          "h": 2079
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93732452392578,
+        "east": 139.9376678466797,
+        "south": 37.5252476526747,
+        "north": 37.52551993630742,
+        "h_bottom_m": 248.49243551294785,
+        "h_top_m": 256.4921913741855,
+        "approx_width_m": 30.310475345237247,
+        "approx_height_m": 30.3104753455137,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93732452392578,
+          "south": 37.5252476526747,
+          "east": 139.9376678466797,
+          "north": 37.52551993630742
+        },
+        "height": 245.4,
+        "extrudedHeight": 265.4
+      }
+    },
+    {
+      "site_id": "uoa_ground",
+      "site_name": "University of Aizu Ground",
+      "source_point": {
+        "latitude": 37.525440902519996,
+        "longitude": 139.9376438416493,
+        "ground_elevation_m": 205.4
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 255.4,
+        "display_bottom_m": 245.4,
+        "display_top_m": 265.4,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "556920910341223982975007",
+        "hex": "0x75eebe382de632c6481f",
+        "binary": "0b1110101111011101011111000111000001011011110011000110010110001100100100000011111",
+        "bit_length": 79,
+        "zoom": {
+          "x": 24,
+          "y": 24,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 14910174,
+          "y": 6499428,
+          "h": 2079
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93762493133545,
+        "east": 139.93764638900757,
+        "south": 37.525434847778946,
+        "north": 37.52545186549241,
+        "h_bottom_m": 248.49243551294785,
+        "h_top_m": 256.4921913741855,
+        "approx_width_m": 1.8944031965638117,
+        "approx_height_m": 1.894403196903388,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93762493133545,
+          "south": 37.525434847778946,
+          "east": 139.93764638900757,
+          "north": 37.52545186549241
+        },
+        "height": 245.4,
+        "extrudedHeight": 265.4
+      }
+    },
+    {
+      "site_id": "uoa_ground",
+      "site_name": "University of Aizu Ground",
+      "source_point": {
+        "latitude": 37.525440902519996,
+        "longitude": 139.9376438416493,
+        "ground_elevation_m": 205.4
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 255.4,
+        "display_bottom_m": 245.4,
+        "display_top_m": 265.4,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "143818457798839929942616095",
+        "hex": "0x76f6be382dee632c64a81f",
+        "binary": "0b111011011110110101111100011100000101101111011100110001100101100011001001010100000011111",
+        "bit_length": 87,
+        "zoom": {
+          "x": 28,
+          "y": 28,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 238562798,
+          "y": 103990858,
+          "h": 2079
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93764370679855,
+        "east": 139.93764504790306,
+        "south": 37.52544016581482,
+        "north": 37.52544122942194,
+        "h_bottom_m": 248.49243551294785,
+        "h_top_m": 256.4921913741855,
+        "approx_width_m": 0.11840020400541579,
+        "approx_height_m": 0.11840020326696667,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93764370679855,
+          "south": 37.52544016581482,
+          "east": 139.93764504790306,
+          "north": 37.52544122942194
+        },
+        "height": 245.4,
+        "extrudedHeight": 265.4
+      }
+    },
+    {
+      "site_id": "uoa_ground",
+      "site_name": "University of Aizu Ground",
+      "source_point": {
+        "latitude": 37.525440902519996,
+        "longitude": 139.9376438416493,
+        "ground_elevation_m": 205.4
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 255.4,
+        "display_bottom_m": 245.4,
+        "display_top_m": 265.4,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "37136681612881199532444633119",
+        "hex": "0x77febe382dee1632c64a481f",
+        "binary": "0b11101111111111010111110001110000010110111101110000101100011001011000110010010100100100000011111",
+        "bit_length": 95,
+        "zoom": {
+          "x": 32,
+          "y": 32,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 3817004769,
+          "y": 1663853732,
+          "h": 2079
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93764379061759,
+        "east": 139.93764387443662,
+        "south": 37.525440897044724,
+        "north": 37.52544096352017,
+        "h_bottom_m": 248.49243551294785,
+        "h_top_m": 256.4921913741855,
+        "approx_width_m": 0.007400012727259388,
+        "approx_height_m": 0.007400012555878064,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93764379061759,
+          "south": 37.525440897044724,
+          "east": 139.93764387443662,
+          "north": 37.52544096352017
+        },
+        "height": 245.4,
+        "extrudedHeight": 265.4
+      }
+    },
+    {
+      "site_id": "uoa_ground",
+      "site_name": "University of Aizu Ground",
+      "source_point": {
+        "latitude": 37.525440902519996,
+        "longitude": 139.9376438416493,
+        "ground_elevation_m": 205.4
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 305.4,
+        "display_bottom_m": 295.4,
+        "display_top_m": 315.4,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "2156449101192194975782",
+        "hex": "0x74e6be382d632c6826",
+        "binary": "0b11101001110011010111110001110000010110101100011001011000110100000100110",
+        "bit_length": 71,
+        "zoom": {
+          "x": 20,
+          "y": 20,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 931885,
+          "y": 406214,
+          "h": 2086
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93732452392578,
+        "east": 139.9376678466797,
+        "south": 37.5252476526747,
+        "north": 37.52551993630742,
+        "h_bottom_m": 304.4907265416077,
+        "h_top_m": 312.4904824028454,
+        "approx_width_m": 30.310475345237247,
+        "approx_height_m": 30.3104753455137,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93732452392578,
+          "south": 37.5252476526747,
+          "east": 139.9376678466797,
+          "north": 37.52551993630742
+        },
+        "height": 295.4,
+        "extrudedHeight": 315.4
+      }
+    },
+    {
+      "site_id": "uoa_ground",
+      "site_name": "University of Aizu Ground",
+      "source_point": {
+        "latitude": 37.525440902519996,
+        "longitude": 139.9376438416493,
+        "ground_elevation_m": 205.4
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 305.4,
+        "display_bottom_m": 295.4,
+        "display_top_m": 315.4,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "556920910341223982975014",
+        "hex": "0x75eebe382de632c64826",
+        "binary": "0b1110101111011101011111000111000001011011110011000110010110001100100100000100110",
+        "bit_length": 79,
+        "zoom": {
+          "x": 24,
+          "y": 24,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 14910174,
+          "y": 6499428,
+          "h": 2086
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93762493133545,
+        "east": 139.93764638900757,
+        "south": 37.525434847778946,
+        "north": 37.52545186549241,
+        "h_bottom_m": 304.4907265416077,
+        "h_top_m": 312.4904824028454,
+        "approx_width_m": 1.8944031965638117,
+        "approx_height_m": 1.894403196903388,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93762493133545,
+          "south": 37.525434847778946,
+          "east": 139.93764638900757,
+          "north": 37.52545186549241
+        },
+        "height": 295.4,
+        "extrudedHeight": 315.4
+      }
+    },
+    {
+      "site_id": "uoa_ground",
+      "site_name": "University of Aizu Ground",
+      "source_point": {
+        "latitude": 37.525440902519996,
+        "longitude": 139.9376438416493,
+        "ground_elevation_m": 205.4
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 305.4,
+        "display_bottom_m": 295.4,
+        "display_top_m": 315.4,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "143818457798839929942616102",
+        "hex": "0x76f6be382dee632c64a826",
+        "binary": "0b111011011110110101111100011100000101101111011100110001100101100011001001010100000100110",
+        "bit_length": 87,
+        "zoom": {
+          "x": 28,
+          "y": 28,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 238562798,
+          "y": 103990858,
+          "h": 2086
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93764370679855,
+        "east": 139.93764504790306,
+        "south": 37.52544016581482,
+        "north": 37.52544122942194,
+        "h_bottom_m": 304.4907265416077,
+        "h_top_m": 312.4904824028454,
+        "approx_width_m": 0.11840020400541579,
+        "approx_height_m": 0.11840020326696667,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93764370679855,
+          "south": 37.52544016581482,
+          "east": 139.93764504790306,
+          "north": 37.52544122942194
+        },
+        "height": 295.4,
+        "extrudedHeight": 315.4
+      }
+    },
+    {
+      "site_id": "uoa_ground",
+      "site_name": "University of Aizu Ground",
+      "source_point": {
+        "latitude": 37.525440902519996,
+        "longitude": 139.9376438416493,
+        "ground_elevation_m": 205.4
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 305.4,
+        "display_bottom_m": 295.4,
+        "display_top_m": 315.4,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "37136681612881199532444633126",
+        "hex": "0x77febe382dee1632c64a4826",
+        "binary": "0b11101111111111010111110001110000010110111101110000101100011001011000110010010100100100000100110",
+        "bit_length": 95,
+        "zoom": {
+          "x": 32,
+          "y": 32,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 3817004769,
+          "y": 1663853732,
+          "h": 2086
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93764379061759,
+        "east": 139.93764387443662,
+        "south": 37.525440897044724,
+        "north": 37.52544096352017,
+        "h_bottom_m": 304.4907265416077,
+        "h_top_m": 312.4904824028454,
+        "approx_width_m": 0.007400012727259388,
+        "approx_height_m": 0.007400012555878064,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93764379061759,
+          "south": 37.525440897044724,
+          "east": 139.93764387443662,
+          "north": 37.52544096352017
+        },
+        "height": 295.4,
+        "extrudedHeight": 315.4
+      }
+    },
+    {
+      "site_id": "aizuwakamatsu_station",
+      "site_name": "Aizuwakamatsu Station",
+      "source_point": {
+        "latitude": 37.508213401476354,
+        "longitude": 139.9305218272644,
+        "ground_elevation_m": 214.0
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 244.0,
+        "display_bottom_m": 234.0,
+        "display_top_m": 254.0,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "2156449101106295887902",
+        "hex": "0x74e6be38196330581e",
+        "binary": "0b11101001110011010111110001110000001100101100011001100000101100000011110",
+        "bit_length": 71,
+        "zoom": {
+          "x": 20,
+          "y": 20,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 931865,
+          "y": 406277,
+          "h": 2078
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93045806884766,
+        "east": 139.93080139160156,
+        "south": 37.508091780419335,
+        "north": 37.508364126656474,
+        "h_bottom_m": 240.4926796517102,
+        "h_top_m": 248.49243551294785,
+        "approx_width_m": 30.317444438339262,
+        "approx_height_m": 30.31744443780339,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93045806884766,
+          "south": 37.508091780419335,
+          "east": 139.93080139160156,
+          "north": 37.508364126656474
+        },
+        "height": 234.0,
+        "extrudedHeight": 254.0
+      }
+    },
+    {
+      "site_id": "aizuwakamatsu_station",
+      "site_name": "Aizuwakamatsu Station",
+      "source_point": {
+        "latitude": 37.508213401476354,
+        "longitude": 139.9305218272644,
+        "ground_elevation_m": 214.0
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 244.0,
+        "display_bottom_m": 234.0,
+        "display_top_m": 254.0,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "556920910318409120843806",
+        "hex": "0x75eebe3819263305881e",
+        "binary": "0b1110101111011101011111000111000000110010010011000110011000001011000100000011110",
+        "bit_length": 79,
+        "zoom": {
+          "x": 24,
+          "y": 24,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 14909842,
+          "y": 6500440,
+          "h": 2078
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.9305009841919,
+        "east": 139.930522441864,
+        "south": 37.50821093202035,
+        "north": 37.50822795366211,
+        "h_bottom_m": 240.4926796517102,
+        "h_top_m": 248.49243551294785,
+        "approx_width_m": 1.8948404934325147,
+        "approx_height_m": 1.8948404931993479,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.9305009841919,
+          "south": 37.50821093202035,
+          "east": 139.930522441864,
+          "north": 37.50822795366211
+        },
+        "height": 234.0,
+        "extrudedHeight": 254.0
+      }
+    },
+    {
+      "site_id": "aizuwakamatsu_station",
+      "site_name": "Aizuwakamatsu Station",
+      "source_point": {
+        "latitude": 37.508213401476354,
+        "longitude": 139.9305218272644,
+        "ground_elevation_m": 214.0
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 244.0,
+        "display_bottom_m": 234.0,
+        "display_top_m": 254.0,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "143818457793000423753832478",
+        "hex": "0x76f6be38192f633058d81e",
+        "binary": "0b111011011110110101111100011100000011001001011110110001100110000010110001101100000011110",
+        "bit_length": 87,
+        "zoom": {
+          "x": 28,
+          "y": 28,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 238557487,
+          "y": 104007053,
+          "h": 2078
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.9305211007595,
+        "east": 139.930522441864,
+        "south": 37.50821305972578,
+        "north": 37.508214123578476,
+        "h_bottom_m": 240.4926796517102,
+        "h_top_m": 248.49243551294785,
+        "approx_width_m": 0.1184275401224312,
+        "approx_height_m": 0.11842754006945098,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.9305211007595,
+          "south": 37.50821305972578,
+          "east": 139.930522441864,
+          "north": 37.508214123578476
+        },
+        "height": 234.0,
+        "extrudedHeight": 254.0
+      }
+    },
+    {
+      "site_id": "aizuwakamatsu_station",
+      "site_name": "Aizuwakamatsu Station",
+      "source_point": {
+        "latitude": 37.508213401476354,
+        "longitude": 139.9305218272644,
+        "ground_elevation_m": 214.0
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 244.0,
+        "display_bottom_m": 234.0,
+        "display_top_m": 254.0,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "37136681611386409077498030110",
+        "hex": "0x77febe38192f8633058da81e",
+        "binary": "0b11101111111111010111110001110000001100100101111100001100011001100000101100011011010100000011110",
+        "bit_length": 95,
+        "zoom": {
+          "x": 32,
+          "y": 32,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 3816919800,
+          "y": 1664112858,
+          "h": 2078
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93052177131176,
+        "east": 139.9305218551308,
+        "south": 37.50821339217975,
+        "north": 37.50821345867055,
+        "h_bottom_m": 240.4926796517102,
+        "h_top_m": 248.49243551294785,
+        "approx_width_m": 0.007401721274134371,
+        "approx_height_m": 0.007401721847570103,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93052177131176,
+          "south": 37.50821339217975,
+          "east": 139.9305218551308,
+          "north": 37.50821345867055
+        },
+        "height": 234.0,
+        "extrudedHeight": 254.0
+      }
+    },
+    {
+      "site_id": "aizuwakamatsu_station",
+      "site_name": "Aizuwakamatsu Station",
+      "source_point": {
+        "latitude": 37.508213401476354,
+        "longitude": 139.9305218272644,
+        "ground_elevation_m": 214.0
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 264.0,
+        "display_bottom_m": 254.0,
+        "display_top_m": 274.0,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "2156449101106295887904",
+        "hex": "0x74e6be381963305820",
+        "binary": "0b11101001110011010111110001110000001100101100011001100000101100000100000",
+        "bit_length": 71,
+        "zoom": {
+          "x": 20,
+          "y": 20,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 931865,
+          "y": 406277,
+          "h": 2080
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93045806884766,
+        "east": 139.93080139160156,
+        "south": 37.508091780419335,
+        "north": 37.508364126656474,
+        "h_bottom_m": 256.4921913741855,
+        "h_top_m": 264.4919472354195,
+        "approx_width_m": 30.317444438339262,
+        "approx_height_m": 30.31744443780339,
+        "approx_h_resolution_m": 7.999755861234007
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93045806884766,
+          "south": 37.508091780419335,
+          "east": 139.93080139160156,
+          "north": 37.508364126656474
+        },
+        "height": 254.0,
+        "extrudedHeight": 274.0
+      }
+    },
+    {
+      "site_id": "aizuwakamatsu_station",
+      "site_name": "Aizuwakamatsu Station",
+      "source_point": {
+        "latitude": 37.508213401476354,
+        "longitude": 139.9305218272644,
+        "ground_elevation_m": 214.0
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 264.0,
+        "display_bottom_m": 254.0,
+        "display_top_m": 274.0,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "556920910318409120843808",
+        "hex": "0x75eebe38192633058820",
+        "binary": "0b1110101111011101011111000111000000110010010011000110011000001011000100000100000",
+        "bit_length": 79,
+        "zoom": {
+          "x": 24,
+          "y": 24,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 14909842,
+          "y": 6500440,
+          "h": 2080
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.9305009841919,
+        "east": 139.930522441864,
+        "south": 37.50821093202035,
+        "north": 37.50822795366211,
+        "h_bottom_m": 256.4921913741855,
+        "h_top_m": 264.4919472354195,
+        "approx_width_m": 1.8948404934325147,
+        "approx_height_m": 1.8948404931993479,
+        "approx_h_resolution_m": 7.999755861234007
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.9305009841919,
+          "south": 37.50821093202035,
+          "east": 139.930522441864,
+          "north": 37.50822795366211
+        },
+        "height": 254.0,
+        "extrudedHeight": 274.0
+      }
+    },
+    {
+      "site_id": "aizuwakamatsu_station",
+      "site_name": "Aizuwakamatsu Station",
+      "source_point": {
+        "latitude": 37.508213401476354,
+        "longitude": 139.9305218272644,
+        "ground_elevation_m": 214.0
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 264.0,
+        "display_bottom_m": 254.0,
+        "display_top_m": 274.0,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "143818457793000423753832480",
+        "hex": "0x76f6be38192f633058d820",
+        "binary": "0b111011011110110101111100011100000011001001011110110001100110000010110001101100000100000",
+        "bit_length": 87,
+        "zoom": {
+          "x": 28,
+          "y": 28,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 238557487,
+          "y": 104007053,
+          "h": 2080
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.9305211007595,
+        "east": 139.930522441864,
+        "south": 37.50821305972578,
+        "north": 37.508214123578476,
+        "h_bottom_m": 256.4921913741855,
+        "h_top_m": 264.4919472354195,
+        "approx_width_m": 0.1184275401224312,
+        "approx_height_m": 0.11842754006945098,
+        "approx_h_resolution_m": 7.999755861234007
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.9305211007595,
+          "south": 37.50821305972578,
+          "east": 139.930522441864,
+          "north": 37.508214123578476
+        },
+        "height": 254.0,
+        "extrudedHeight": 274.0
+      }
+    },
+    {
+      "site_id": "aizuwakamatsu_station",
+      "site_name": "Aizuwakamatsu Station",
+      "source_point": {
+        "latitude": 37.508213401476354,
+        "longitude": 139.9305218272644,
+        "ground_elevation_m": 214.0
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 264.0,
+        "display_bottom_m": 254.0,
+        "display_top_m": 274.0,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "37136681611386409077498030112",
+        "hex": "0x77febe38192f8633058da820",
+        "binary": "0b11101111111111010111110001110000001100100101111100001100011001100000101100011011010100000100000",
+        "bit_length": 95,
+        "zoom": {
+          "x": 32,
+          "y": 32,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 3816919800,
+          "y": 1664112858,
+          "h": 2080
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93052177131176,
+        "east": 139.9305218551308,
+        "south": 37.50821339217975,
+        "north": 37.50821345867055,
+        "h_bottom_m": 256.4921913741855,
+        "h_top_m": 264.4919472354195,
+        "approx_width_m": 0.007401721274134371,
+        "approx_height_m": 0.007401721847570103,
+        "approx_h_resolution_m": 7.999755861234007
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93052177131176,
+          "south": 37.50821339217975,
+          "east": 139.9305218551308,
+          "north": 37.50821345867055
+        },
+        "height": 254.0,
+        "extrudedHeight": 274.0
+      }
+    },
+    {
+      "site_id": "aizuwakamatsu_station",
+      "site_name": "Aizuwakamatsu Station",
+      "source_point": {
+        "latitude": 37.508213401476354,
+        "longitude": 139.9305218272644,
+        "ground_elevation_m": 214.0
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 314.0,
+        "display_bottom_m": 304.0,
+        "display_top_m": 324.0,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "2156449101106295887911",
+        "hex": "0x74e6be381963305827",
+        "binary": "0b11101001110011010111110001110000001100101100011001100000101100000100111",
+        "bit_length": 71,
+        "zoom": {
+          "x": 20,
+          "y": 20,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 931865,
+          "y": 406277,
+          "h": 2087
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93045806884766,
+        "east": 139.93080139160156,
+        "south": 37.508091780419335,
+        "north": 37.508364126656474,
+        "h_bottom_m": 312.4904824028454,
+        "h_top_m": 320.490238264083,
+        "approx_width_m": 30.317444438339262,
+        "approx_height_m": 30.31744443780339,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93045806884766,
+          "south": 37.508091780419335,
+          "east": 139.93080139160156,
+          "north": 37.508364126656474
+        },
+        "height": 304.0,
+        "extrudedHeight": 324.0
+      }
+    },
+    {
+      "site_id": "aizuwakamatsu_station",
+      "site_name": "Aizuwakamatsu Station",
+      "source_point": {
+        "latitude": 37.508213401476354,
+        "longitude": 139.9305218272644,
+        "ground_elevation_m": 214.0
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 314.0,
+        "display_bottom_m": 304.0,
+        "display_top_m": 324.0,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "556920910318409120843815",
+        "hex": "0x75eebe38192633058827",
+        "binary": "0b1110101111011101011111000111000000110010010011000110011000001011000100000100111",
+        "bit_length": 79,
+        "zoom": {
+          "x": 24,
+          "y": 24,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 14909842,
+          "y": 6500440,
+          "h": 2087
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.9305009841919,
+        "east": 139.930522441864,
+        "south": 37.50821093202035,
+        "north": 37.50822795366211,
+        "h_bottom_m": 312.4904824028454,
+        "h_top_m": 320.490238264083,
+        "approx_width_m": 1.8948404934325147,
+        "approx_height_m": 1.8948404931993479,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.9305009841919,
+          "south": 37.50821093202035,
+          "east": 139.930522441864,
+          "north": 37.50822795366211
+        },
+        "height": 304.0,
+        "extrudedHeight": 324.0
+      }
+    },
+    {
+      "site_id": "aizuwakamatsu_station",
+      "site_name": "Aizuwakamatsu Station",
+      "source_point": {
+        "latitude": 37.508213401476354,
+        "longitude": 139.9305218272644,
+        "ground_elevation_m": 214.0
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 314.0,
+        "display_bottom_m": 304.0,
+        "display_top_m": 324.0,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "143818457793000423753832487",
+        "hex": "0x76f6be38192f633058d827",
+        "binary": "0b111011011110110101111100011100000011001001011110110001100110000010110001101100000100111",
+        "bit_length": 87,
+        "zoom": {
+          "x": 28,
+          "y": 28,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 238557487,
+          "y": 104007053,
+          "h": 2087
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.9305211007595,
+        "east": 139.930522441864,
+        "south": 37.50821305972578,
+        "north": 37.508214123578476,
+        "h_bottom_m": 312.4904824028454,
+        "h_top_m": 320.490238264083,
+        "approx_width_m": 0.1184275401224312,
+        "approx_height_m": 0.11842754006945098,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.9305211007595,
+          "south": 37.50821305972578,
+          "east": 139.930522441864,
+          "north": 37.508214123578476
+        },
+        "height": 304.0,
+        "extrudedHeight": 324.0
+      }
+    },
+    {
+      "site_id": "aizuwakamatsu_station",
+      "site_name": "Aizuwakamatsu Station",
+      "source_point": {
+        "latitude": 37.508213401476354,
+        "longitude": 139.9305218272644,
+        "ground_elevation_m": 214.0
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 314.0,
+        "display_bottom_m": 304.0,
+        "display_top_m": 324.0,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "37136681611386409077498030119",
+        "hex": "0x77febe38192f8633058da827",
+        "binary": "0b11101111111111010111110001110000001100100101111100001100011001100000101100011011010100000100111",
+        "bit_length": 95,
+        "zoom": {
+          "x": 32,
+          "y": 32,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 3816919800,
+          "y": 1664112858,
+          "h": 2087
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93052177131176,
+        "east": 139.9305218551308,
+        "south": 37.50821339217975,
+        "north": 37.50821345867055,
+        "h_bottom_m": 312.4904824028454,
+        "h_top_m": 320.490238264083,
+        "approx_width_m": 0.007401721274134371,
+        "approx_height_m": 0.007401721847570103,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93052177131176,
+          "south": 37.50821339217975,
+          "east": 139.9305218551308,
+          "north": 37.50821345867055
+        },
+        "height": 304.0,
+        "extrudedHeight": 324.0
+      }
+    },
+    {
+      "site_id": "tsurugajo",
+      "site_name": "Tsurugajo Castle",
+      "source_point": {
+        "latitude": 37.487060071197305,
+        "longitude": 139.93025833564147,
+        "ground_elevation_m": 231.5
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 261.5,
+        "display_bottom_m": 251.5,
+        "display_top_m": 271.5,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "2156449101102001240096",
+        "hex": "0x74e6be381863353820",
+        "binary": "0b11101001110011010111110001110000001100001100011001101010011100000100000",
+        "bit_length": 71,
+        "zoom": {
+          "x": 20,
+          "y": 20,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 931864,
+          "y": 406355,
+          "h": 2080
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93011474609375,
+        "east": 139.93045806884766,
+        "south": 37.48684571271661,
+        "north": 37.487118136450086,
+        "h_bottom_m": 256.4921913741855,
+        "h_top_m": 264.4919472354195,
+        "approx_width_m": 30.326071291391088,
+        "approx_height_m": 30.326071290714108,
+        "approx_h_resolution_m": 7.999755861234007
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93011474609375,
+          "south": 37.48684571271661,
+          "east": 139.93045806884766,
+          "north": 37.487118136450086
+        },
+        "height": 251.5,
+        "extrudedHeight": 271.5
+      }
+    },
+    {
+      "site_id": "tsurugajo",
+      "site_name": "Tsurugajo Castle",
+      "source_point": {
+        "latitude": 37.487060071197305,
+        "longitude": 139.93025833564147,
+        "ground_elevation_m": 231.5
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 261.5,
+        "display_bottom_m": 251.5,
+        "display_top_m": 271.5,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "556920910317584492214304",
+        "hex": "0x75eebe38186633533820",
+        "binary": "0b1110101111011101011111000111000000110000110011000110011010100110011100000100000",
+        "bit_length": 79,
+        "zoom": {
+          "x": 24,
+          "y": 24,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 14909830,
+          "y": 6501683,
+          "h": 2080
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93024349212646,
+        "east": 139.93026494979858,
+        "south": 37.48705003060985,
+        "north": 37.48706705707573,
+        "h_bottom_m": 256.4921913741855,
+        "h_top_m": 264.4919472354195,
+        "approx_width_m": 1.8953775117499045,
+        "approx_height_m": 1.8953775113602191,
+        "approx_h_resolution_m": 7.999755861234007
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93024349212646,
+          "south": 37.48705003060985,
+          "east": 139.93026494979858,
+          "north": 37.48706705707573
+        },
+        "height": 251.5,
+        "extrudedHeight": 271.5
+      }
+    },
+    {
+      "site_id": "tsurugajo",
+      "site_name": "Tsurugajo Castle",
+      "source_point": {
+        "latitude": 37.487060071197305,
+        "longitude": 139.93025833564147,
+        "ground_elevation_m": 231.5
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 261.5,
+        "display_bottom_m": 251.5,
+        "display_top_m": 271.5,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "143818457792784919556220960",
+        "hex": "0x76f6be38186b6335336820",
+        "binary": "0b111011011110110101111100011100000011000011010110110001100110101001100110110100000100000",
+        "bit_length": 87,
+        "zoom": {
+          "x": 28,
+          "y": 28,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 238557291,
+          "y": 104026934,
+          "h": 2080
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93025824427605,
+        "east": 139.93025958538055,
+        "south": 37.48705960799739,
+        "north": 37.48706067215148,
+        "h_bottom_m": 256.4921913741855,
+        "h_top_m": 264.4919472354195,
+        "approx_width_m": 0.11846109195316973,
+        "approx_height_m": 0.1184610915433024,
+        "approx_h_resolution_m": 7.999755861234007
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93025824427605,
+          "south": 37.48705960799739,
+          "east": 139.93025958538055,
+          "north": 37.48706067215148
+        },
+        "height": 251.5,
+        "extrudedHeight": 271.5
+      }
+    },
+    {
+      "site_id": "tsurugajo",
+      "site_name": "Tsurugajo Castle",
+      "source_point": {
+        "latitude": 37.487060071197305,
+        "longitude": 139.93025833564147,
+        "ground_elevation_m": 231.5
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 261.5,
+        "display_bottom_m": 251.5,
+        "display_top_m": 271.5,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "37136681611331116838063347744",
+        "hex": "0x77febe38186b163353369820",
+        "binary": "0b11101111111111010111110001110000001100001101011000101100011001101010011001101101001100000100000",
+        "bit_length": 95,
+        "zoom": {
+          "x": 32,
+          "y": 32,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 3816916657,
+          "y": 1664430953,
+          "h": 2080
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93025832809508,
+        "east": 139.9302584119141,
+        "south": 37.48706000705517,
+        "north": 37.487060073564805,
+        "h_bottom_m": 256.4921913741855,
+        "h_top_m": 264.4919472354195,
+        "approx_width_m": 0.007403818256960603,
+        "approx_height_m": 0.007403818715814247,
+        "approx_h_resolution_m": 7.999755861234007
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93025832809508,
+          "south": 37.48706000705517,
+          "east": 139.9302584119141,
+          "north": 37.487060073564805
+        },
+        "height": 251.5,
+        "extrudedHeight": 271.5
+      }
+    },
+    {
+      "site_id": "tsurugajo",
+      "site_name": "Tsurugajo Castle",
+      "source_point": {
+        "latitude": 37.487060071197305,
+        "longitude": 139.93025833564147,
+        "ground_elevation_m": 231.5
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 281.5,
+        "display_bottom_m": 271.5,
+        "display_top_m": 291.5,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "2156449101102001240099",
+        "hex": "0x74e6be381863353823",
+        "binary": "0b11101001110011010111110001110000001100001100011001101010011100000100011",
+        "bit_length": 71,
+        "zoom": {
+          "x": 20,
+          "y": 20,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 931864,
+          "y": 406355,
+          "h": 2083
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93011474609375,
+        "east": 139.93045806884766,
+        "south": 37.48684571271661,
+        "north": 37.487118136450086,
+        "h_bottom_m": 280.4914589578948,
+        "h_top_m": 288.49121481913244,
+        "approx_width_m": 30.326071291391088,
+        "approx_height_m": 30.326071290714108,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93011474609375,
+          "south": 37.48684571271661,
+          "east": 139.93045806884766,
+          "north": 37.487118136450086
+        },
+        "height": 271.5,
+        "extrudedHeight": 291.5
+      }
+    },
+    {
+      "site_id": "tsurugajo",
+      "site_name": "Tsurugajo Castle",
+      "source_point": {
+        "latitude": 37.487060071197305,
+        "longitude": 139.93025833564147,
+        "ground_elevation_m": 231.5
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 281.5,
+        "display_bottom_m": 271.5,
+        "display_top_m": 291.5,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "556920910317584492214307",
+        "hex": "0x75eebe38186633533823",
+        "binary": "0b1110101111011101011111000111000000110000110011000110011010100110011100000100011",
+        "bit_length": 79,
+        "zoom": {
+          "x": 24,
+          "y": 24,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 14909830,
+          "y": 6501683,
+          "h": 2083
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93024349212646,
+        "east": 139.93026494979858,
+        "south": 37.48705003060985,
+        "north": 37.48706705707573,
+        "h_bottom_m": 280.4914589578948,
+        "h_top_m": 288.49121481913244,
+        "approx_width_m": 1.8953775117499045,
+        "approx_height_m": 1.8953775113602191,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93024349212646,
+          "south": 37.48705003060985,
+          "east": 139.93026494979858,
+          "north": 37.48706705707573
+        },
+        "height": 271.5,
+        "extrudedHeight": 291.5
+      }
+    },
+    {
+      "site_id": "tsurugajo",
+      "site_name": "Tsurugajo Castle",
+      "source_point": {
+        "latitude": 37.487060071197305,
+        "longitude": 139.93025833564147,
+        "ground_elevation_m": 231.5
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 281.5,
+        "display_bottom_m": 271.5,
+        "display_top_m": 291.5,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "143818457792784919556220963",
+        "hex": "0x76f6be38186b6335336823",
+        "binary": "0b111011011110110101111100011100000011000011010110110001100110101001100110110100000100011",
+        "bit_length": 87,
+        "zoom": {
+          "x": 28,
+          "y": 28,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 238557291,
+          "y": 104026934,
+          "h": 2083
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93025824427605,
+        "east": 139.93025958538055,
+        "south": 37.48705960799739,
+        "north": 37.48706067215148,
+        "h_bottom_m": 280.4914589578948,
+        "h_top_m": 288.49121481913244,
+        "approx_width_m": 0.11846109195316973,
+        "approx_height_m": 0.1184610915433024,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93025824427605,
+          "south": 37.48705960799739,
+          "east": 139.93025958538055,
+          "north": 37.48706067215148
+        },
+        "height": 271.5,
+        "extrudedHeight": 291.5
+      }
+    },
+    {
+      "site_id": "tsurugajo",
+      "site_name": "Tsurugajo Castle",
+      "source_point": {
+        "latitude": 37.487060071197305,
+        "longitude": 139.93025833564147,
+        "ground_elevation_m": 231.5
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 281.5,
+        "display_bottom_m": 271.5,
+        "display_top_m": 291.5,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "37136681611331116838063347747",
+        "hex": "0x77febe38186b163353369823",
+        "binary": "0b11101111111111010111110001110000001100001101011000101100011001101010011001101101001100000100011",
+        "bit_length": 95,
+        "zoom": {
+          "x": 32,
+          "y": 32,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 3816916657,
+          "y": 1664430953,
+          "h": 2083
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93025832809508,
+        "east": 139.9302584119141,
+        "south": 37.48706000705517,
+        "north": 37.487060073564805,
+        "h_bottom_m": 280.4914589578948,
+        "h_top_m": 288.49121481913244,
+        "approx_width_m": 0.007403818256960603,
+        "approx_height_m": 0.007403818715814247,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93025832809508,
+          "south": 37.48706000705517,
+          "east": 139.9302584119141,
+          "north": 37.487060073564805
+        },
+        "height": 271.5,
+        "extrudedHeight": 291.5
+      }
+    },
+    {
+      "site_id": "tsurugajo",
+      "site_name": "Tsurugajo Castle",
+      "source_point": {
+        "latitude": 37.487060071197305,
+        "longitude": 139.93025833564147,
+        "ground_elevation_m": 231.5
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 331.5,
+        "display_bottom_m": 321.5,
+        "display_top_m": 341.5,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "2156449101102001240105",
+        "hex": "0x74e6be381863353829",
+        "binary": "0b11101001110011010111110001110000001100001100011001101010011100000101001",
+        "bit_length": 71,
+        "zoom": {
+          "x": 20,
+          "y": 20,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 931864,
+          "y": 406355,
+          "h": 2089
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93011474609375,
+        "east": 139.93045806884766,
+        "south": 37.48684571271661,
+        "north": 37.487118136450086,
+        "h_bottom_m": 328.48999412532066,
+        "h_top_m": 336.4897499865583,
+        "approx_width_m": 30.326071291391088,
+        "approx_height_m": 30.326071290714108,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93011474609375,
+          "south": 37.48684571271661,
+          "east": 139.93045806884766,
+          "north": 37.487118136450086
+        },
+        "height": 321.5,
+        "extrudedHeight": 341.5
+      }
+    },
+    {
+      "site_id": "tsurugajo",
+      "site_name": "Tsurugajo Castle",
+      "source_point": {
+        "latitude": 37.487060071197305,
+        "longitude": 139.93025833564147,
+        "ground_elevation_m": 231.5
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 331.5,
+        "display_bottom_m": 321.5,
+        "display_top_m": 341.5,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "556920910317584492214313",
+        "hex": "0x75eebe38186633533829",
+        "binary": "0b1110101111011101011111000111000000110000110011000110011010100110011100000101001",
+        "bit_length": 79,
+        "zoom": {
+          "x": 24,
+          "y": 24,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 14909830,
+          "y": 6501683,
+          "h": 2089
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93024349212646,
+        "east": 139.93026494979858,
+        "south": 37.48705003060985,
+        "north": 37.48706705707573,
+        "h_bottom_m": 328.48999412532066,
+        "h_top_m": 336.4897499865583,
+        "approx_width_m": 1.8953775117499045,
+        "approx_height_m": 1.8953775113602191,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93024349212646,
+          "south": 37.48705003060985,
+          "east": 139.93026494979858,
+          "north": 37.48706705707573
+        },
+        "height": 321.5,
+        "extrudedHeight": 341.5
+      }
+    },
+    {
+      "site_id": "tsurugajo",
+      "site_name": "Tsurugajo Castle",
+      "source_point": {
+        "latitude": 37.487060071197305,
+        "longitude": 139.93025833564147,
+        "ground_elevation_m": 231.5
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 331.5,
+        "display_bottom_m": 321.5,
+        "display_top_m": 341.5,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "143818457792784919556220969",
+        "hex": "0x76f6be38186b6335336829",
+        "binary": "0b111011011110110101111100011100000011000011010110110001100110101001100110110100000101001",
+        "bit_length": 87,
+        "zoom": {
+          "x": 28,
+          "y": 28,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 238557291,
+          "y": 104026934,
+          "h": 2089
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93025824427605,
+        "east": 139.93025958538055,
+        "south": 37.48705960799739,
+        "north": 37.48706067215148,
+        "h_bottom_m": 328.48999412532066,
+        "h_top_m": 336.4897499865583,
+        "approx_width_m": 0.11846109195316973,
+        "approx_height_m": 0.1184610915433024,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93025824427605,
+          "south": 37.48705960799739,
+          "east": 139.93025958538055,
+          "north": 37.48706067215148
+        },
+        "height": 321.5,
+        "extrudedHeight": 341.5
+      }
+    },
+    {
+      "site_id": "tsurugajo",
+      "site_name": "Tsurugajo Castle",
+      "source_point": {
+        "latitude": 37.487060071197305,
+        "longitude": 139.93025833564147,
+        "ground_elevation_m": 231.5
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 331.5,
+        "display_bottom_m": 321.5,
+        "display_top_m": 341.5,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "37136681611331116838063347753",
+        "hex": "0x77febe38186b163353369829",
+        "binary": "0b11101111111111010111110001110000001100001101011000101100011001101010011001101101001100000101001",
+        "bit_length": 95,
+        "zoom": {
+          "x": 32,
+          "y": 32,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 3816916657,
+          "y": 1664430953,
+          "h": 2089
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.93025832809508,
+        "east": 139.9302584119141,
+        "south": 37.48706000705517,
+        "north": 37.487060073564805,
+        "h_bottom_m": 328.48999412532066,
+        "h_top_m": 336.4897499865583,
+        "approx_width_m": 0.007403818256960603,
+        "approx_height_m": 0.007403818715814247,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.93025832809508,
+          "south": 37.48706000705517,
+          "east": 139.9302584119141,
+          "north": 37.487060073564805
+        },
+        "height": 321.5,
+        "extrudedHeight": 341.5
+      }
+    },
+    {
+      "site_id": "iimoriyama_entrance",
+      "site_name": "Iimoriyama Entrance",
+      "source_point": {
+        "latitude": 37.50447573887954,
+        "longitude": 139.9517994364912,
+        "ground_elevation_m": 252.9
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 282.9,
+        "display_bottom_m": 272.9,
+        "display_top_m": 292.9,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "2156449101372583917603",
+        "hex": "0x74e6be385763313823",
+        "binary": "0b11101001110011010111110001110000101011101100011001100010011100000100011",
+        "bit_length": 71,
+        "zoom": {
+          "x": 20,
+          "y": 20,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 931927,
+          "y": 406291,
+          "h": 2083
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.95174407958984,
+        "east": 139.95208740234375,
+        "south": 37.50427882876824,
+        "north": 37.50455118891612,
+        "h_bottom_m": 280.4914589578948,
+        "h_top_m": 288.49121481913244,
+        "approx_width_m": 30.31899297409715,
+        "approx_height_m": 30.31899297381523,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.95174407958984,
+          "south": 37.50427882876824,
+          "east": 139.95208740234375,
+          "north": 37.50455118891612
+        },
+        "height": 272.9,
+        "extrudedHeight": 292.9
+      }
+    },
+    {
+      "site_id": "iimoriyama_entrance",
+      "site_name": "Iimoriyama Entrance",
+      "source_point": {
+        "latitude": 37.50447573887954,
+        "longitude": 139.9517994364912,
+        "ground_elevation_m": 252.9
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 282.9,
+        "display_bottom_m": 272.9,
+        "display_top_m": 292.9,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "556920910386578842667043",
+        "hex": "0x75eebe38572633134823",
+        "binary": "0b1110101111011101011111000111000010101110010011000110011000100110100100000100011",
+        "bit_length": 79,
+        "zoom": {
+          "x": 24,
+          "y": 24,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 14910834,
+          "y": 6500660,
+          "h": 2083
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.95178699493408,
+        "east": 139.9518084526062,
+        "south": 37.504466076476646,
+        "north": 37.5044830989723,
+        "h_bottom_m": 280.4914589578948,
+        "h_top_m": 288.49121481913244,
+        "approx_width_m": 1.8949355486635504,
+        "approx_height_m": 1.894935548326183,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.95178699493408,
+          "south": 37.504466076476646,
+          "east": 139.9518084526062,
+          "north": 37.5044830989723
+        },
+        "height": 272.9,
+        "extrudedHeight": 292.9
+      }
+    },
+    {
+      "site_id": "iimoriyama_entrance",
+      "site_name": "Iimoriyama Entrance",
+      "source_point": {
+        "latitude": 37.50447573887954,
+        "longitude": 139.9517994364912,
+        "ground_elevation_m": 252.9
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 282.9,
+        "display_bottom_m": 272.9,
+        "display_top_m": 292.9,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "143818457810445275254515747",
+        "hex": "0x76f6be3857296331346823",
+        "binary": "0b111011011110110101111100011100001010111001010010110001100110001001101000110100000100011",
+        "bit_length": 87,
+        "zoom": {
+          "x": 28,
+          "y": 28,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 238573353,
+          "y": 104010566,
+          "h": 2083
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.95179906487465,
+        "east": 139.95180040597916,
+        "south": 37.50447565163093,
+        "north": 37.50447671553689,
+        "h_bottom_m": 280.4914589578948,
+        "h_top_m": 288.49121481913244,
+        "approx_width_m": 0.11843346925986001,
+        "approx_height_m": 0.11843346919972562,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.95179906487465,
+          "south": 37.50447565163093,
+          "east": 139.95180040597916,
+          "north": 37.50447671553689
+        },
+        "height": 272.9,
+        "extrudedHeight": 292.9
+      }
+    },
+    {
+      "site_id": "iimoriyama_entrance",
+      "site_name": "Iimoriyama Entrance",
+      "source_point": {
+        "latitude": 37.50447573887954,
+        "longitude": 139.9517994364912,
+        "ground_elevation_m": 252.9
+      },
+      "operation_altitude": {
+        "agl_center_m": 30,
+        "amsl_center_m": 282.9,
+        "display_bottom_m": 272.9,
+        "display_top_m": 292.9,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "37136681615852220689475364899",
+        "hex": "0x77febe38572946331346e823",
+        "binary": "0b11101111111111010111110001110000101011100101001010001100011001100010011010001101110100000100011",
+        "bit_length": 95,
+        "zoom": {
+          "x": 32,
+          "y": 32,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 3817173652,
+          "y": 1664169070,
+          "h": 2083
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.95179940015078,
+        "east": 139.9517994839698,
+        "south": 37.50447571812506,
+        "north": 37.504475784619174,
+        "h_bottom_m": 280.4914589578948,
+        "h_top_m": 288.49121481913244,
+        "approx_width_m": 0.0074020918715940465,
+        "approx_height_m": 0.007402091231753436,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.95179940015078,
+          "south": 37.50447571812506,
+          "east": 139.9517994839698,
+          "north": 37.504475784619174
+        },
+        "height": 272.9,
+        "extrudedHeight": 292.9
+      }
+    },
+    {
+      "site_id": "iimoriyama_entrance",
+      "site_name": "Iimoriyama Entrance",
+      "source_point": {
+        "latitude": 37.50447573887954,
+        "longitude": 139.9517994364912,
+        "ground_elevation_m": 252.9
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 302.9,
+        "display_bottom_m": 292.9,
+        "display_top_m": 312.9,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "2156449101372583917605",
+        "hex": "0x74e6be385763313825",
+        "binary": "0b11101001110011010111110001110000101011101100011001100010011100000100101",
+        "bit_length": 71,
+        "zoom": {
+          "x": 20,
+          "y": 20,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 931927,
+          "y": 406291,
+          "h": 2085
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.95174407958984,
+        "east": 139.95208740234375,
+        "south": 37.50427882876824,
+        "north": 37.50455118891612,
+        "h_bottom_m": 296.4909706803701,
+        "h_top_m": 304.4907265416077,
+        "approx_width_m": 30.31899297409715,
+        "approx_height_m": 30.31899297381523,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.95174407958984,
+          "south": 37.50427882876824,
+          "east": 139.95208740234375,
+          "north": 37.50455118891612
+        },
+        "height": 292.9,
+        "extrudedHeight": 312.9
+      }
+    },
+    {
+      "site_id": "iimoriyama_entrance",
+      "site_name": "Iimoriyama Entrance",
+      "source_point": {
+        "latitude": 37.50447573887954,
+        "longitude": 139.9517994364912,
+        "ground_elevation_m": 252.9
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 302.9,
+        "display_bottom_m": 292.9,
+        "display_top_m": 312.9,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "556920910386578842667045",
+        "hex": "0x75eebe38572633134825",
+        "binary": "0b1110101111011101011111000111000010101110010011000110011000100110100100000100101",
+        "bit_length": 79,
+        "zoom": {
+          "x": 24,
+          "y": 24,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 14910834,
+          "y": 6500660,
+          "h": 2085
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.95178699493408,
+        "east": 139.9518084526062,
+        "south": 37.504466076476646,
+        "north": 37.5044830989723,
+        "h_bottom_m": 296.4909706803701,
+        "h_top_m": 304.4907265416077,
+        "approx_width_m": 1.8949355486635504,
+        "approx_height_m": 1.894935548326183,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.95178699493408,
+          "south": 37.504466076476646,
+          "east": 139.9518084526062,
+          "north": 37.5044830989723
+        },
+        "height": 292.9,
+        "extrudedHeight": 312.9
+      }
+    },
+    {
+      "site_id": "iimoriyama_entrance",
+      "site_name": "Iimoriyama Entrance",
+      "source_point": {
+        "latitude": 37.50447573887954,
+        "longitude": 139.9517994364912,
+        "ground_elevation_m": 252.9
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 302.9,
+        "display_bottom_m": 292.9,
+        "display_top_m": 312.9,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "143818457810445275254515749",
+        "hex": "0x76f6be3857296331346825",
+        "binary": "0b111011011110110101111100011100001010111001010010110001100110001001101000110100000100101",
+        "bit_length": 87,
+        "zoom": {
+          "x": 28,
+          "y": 28,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 238573353,
+          "y": 104010566,
+          "h": 2085
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.95179906487465,
+        "east": 139.95180040597916,
+        "south": 37.50447565163093,
+        "north": 37.50447671553689,
+        "h_bottom_m": 296.4909706803701,
+        "h_top_m": 304.4907265416077,
+        "approx_width_m": 0.11843346925986001,
+        "approx_height_m": 0.11843346919972562,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.95179906487465,
+          "south": 37.50447565163093,
+          "east": 139.95180040597916,
+          "north": 37.50447671553689
+        },
+        "height": 292.9,
+        "extrudedHeight": 312.9
+      }
+    },
+    {
+      "site_id": "iimoriyama_entrance",
+      "site_name": "Iimoriyama Entrance",
+      "source_point": {
+        "latitude": 37.50447573887954,
+        "longitude": 139.9517994364912,
+        "ground_elevation_m": 252.9
+      },
+      "operation_altitude": {
+        "agl_center_m": 50,
+        "amsl_center_m": 302.9,
+        "display_bottom_m": 292.9,
+        "display_top_m": 312.9,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "37136681615852220689475364901",
+        "hex": "0x77febe38572946331346e825",
+        "binary": "0b11101111111111010111110001110000101011100101001010001100011001100010011010001101110100000100101",
+        "bit_length": 95,
+        "zoom": {
+          "x": 32,
+          "y": 32,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 3817173652,
+          "y": 1664169070,
+          "h": 2085
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.95179940015078,
+        "east": 139.9517994839698,
+        "south": 37.50447571812506,
+        "north": 37.504475784619174,
+        "h_bottom_m": 296.4909706803701,
+        "h_top_m": 304.4907265416077,
+        "approx_width_m": 0.0074020918715940465,
+        "approx_height_m": 0.007402091231753436,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.95179940015078,
+          "south": 37.50447571812506,
+          "east": 139.9517994839698,
+          "north": 37.504475784619174
+        },
+        "height": 292.9,
+        "extrudedHeight": 312.9
+      }
+    },
+    {
+      "site_id": "iimoriyama_entrance",
+      "site_name": "Iimoriyama Entrance",
+      "source_point": {
+        "latitude": 37.50447573887954,
+        "longitude": 139.9517994364912,
+        "ground_elevation_m": 252.9
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 352.9,
+        "display_bottom_m": 342.9,
+        "display_top_m": 362.9,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "2156449101372583917612",
+        "hex": "0x74e6be38576331382c",
+        "binary": "0b11101001110011010111110001110000101011101100011001100010011100000101100",
+        "bit_length": 71,
+        "zoom": {
+          "x": 20,
+          "y": 20,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 931927,
+          "y": 406291,
+          "h": 2092
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.95174407958984,
+        "east": 139.95208740234375,
+        "south": 37.50427882876824,
+        "north": 37.50455118891612,
+        "h_bottom_m": 352.4892617090336,
+        "h_top_m": 360.48901757027124,
+        "approx_width_m": 30.31899297409715,
+        "approx_height_m": 30.31899297381523,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.95174407958984,
+          "south": 37.50427882876824,
+          "east": 139.95208740234375,
+          "north": 37.50455118891612
+        },
+        "height": 342.9,
+        "extrudedHeight": 362.9
+      }
+    },
+    {
+      "site_id": "iimoriyama_entrance",
+      "site_name": "Iimoriyama Entrance",
+      "source_point": {
+        "latitude": 37.50447573887954,
+        "longitude": 139.9517994364912,
+        "ground_elevation_m": 252.9
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 352.9,
+        "display_bottom_m": 342.9,
+        "display_top_m": 362.9,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "556920910386578842667052",
+        "hex": "0x75eebe3857263313482c",
+        "binary": "0b1110101111011101011111000111000010101110010011000110011000100110100100000101100",
+        "bit_length": 79,
+        "zoom": {
+          "x": 24,
+          "y": 24,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 14910834,
+          "y": 6500660,
+          "h": 2092
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.95178699493408,
+        "east": 139.9518084526062,
+        "south": 37.504466076476646,
+        "north": 37.5044830989723,
+        "h_bottom_m": 352.4892617090336,
+        "h_top_m": 360.48901757027124,
+        "approx_width_m": 1.8949355486635504,
+        "approx_height_m": 1.894935548326183,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.95178699493408,
+          "south": 37.504466076476646,
+          "east": 139.9518084526062,
+          "north": 37.5044830989723
+        },
+        "height": 342.9,
+        "extrudedHeight": 362.9
+      }
+    },
+    {
+      "site_id": "iimoriyama_entrance",
+      "site_name": "Iimoriyama Entrance",
+      "source_point": {
+        "latitude": 37.50447573887954,
+        "longitude": 139.9517994364912,
+        "ground_elevation_m": 252.9
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 352.9,
+        "display_bottom_m": 342.9,
+        "display_top_m": 362.9,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "143818457810445275254515756",
+        "hex": "0x76f6be385729633134682c",
+        "binary": "0b111011011110110101111100011100001010111001010010110001100110001001101000110100000101100",
+        "bit_length": 87,
+        "zoom": {
+          "x": 28,
+          "y": 28,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 238573353,
+          "y": 104010566,
+          "h": 2092
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.95179906487465,
+        "east": 139.95180040597916,
+        "south": 37.50447565163093,
+        "north": 37.50447671553689,
+        "h_bottom_m": 352.4892617090336,
+        "h_top_m": 360.48901757027124,
+        "approx_width_m": 0.11843346925986001,
+        "approx_height_m": 0.11843346919972562,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.95179906487465,
+          "south": 37.50447565163093,
+          "east": 139.95180040597916,
+          "north": 37.50447671553689
+        },
+        "height": 342.9,
+        "extrudedHeight": 362.9
+      }
+    },
+    {
+      "site_id": "iimoriyama_entrance",
+      "site_name": "Iimoriyama Entrance",
+      "source_point": {
+        "latitude": 37.50447573887954,
+        "longitude": 139.9517994364912,
+        "ground_elevation_m": 252.9
+      },
+      "operation_altitude": {
+        "agl_center_m": 100,
+        "amsl_center_m": 352.9,
+        "display_bottom_m": 342.9,
+        "display_top_m": 362.9,
+        "display_thickness_m": 20.0
+      },
+      "bst_id": {
+        "decimal": "37136681615852220689475364908",
+        "hex": "0x77febe38572946331346e82c",
+        "binary": "0b11101111111111010111110001110000101011100101001010001100011001100010011010001101110100000101100",
+        "bit_length": 95,
+        "zoom": {
+          "x": 32,
+          "y": 32,
+          "h": 12
+        },
+        "tile_index": {
+          "x": 3817173652,
+          "y": 1664169070,
+          "h": 2092
+        }
+      },
+      "bst_cell_bounds": {
+        "west": 139.95179940015078,
+        "east": 139.9517994839698,
+        "south": 37.50447571812506,
+        "north": 37.504475784619174,
+        "h_bottom_m": 352.4892617090336,
+        "h_top_m": 360.48901757027124,
+        "approx_width_m": 0.0074020918715940465,
+        "approx_height_m": 0.007402091231753436,
+        "approx_h_resolution_m": 7.999755861237645
+      },
+      "cesium": {
+        "rectangle": {
+          "west": 139.95179940015078,
+          "south": 37.50447571812506,
+          "east": 139.9517994839698,
+          "north": 37.504475784619174
+        },
+        "height": 342.9,
+        "extrudedHeight": 362.9
+      }
+    }
+  ]
+}

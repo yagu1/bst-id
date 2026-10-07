@@ -1,0 +1,261 @@
+{
+  "input": {
+    "ply": "tsuruga_aligned.ply",
+    "transform_json": "tsuruga_enu_anchor_transform.json",
+    "original_point_count": 280335,
+    "point_count_after_crop": 157239,
+    "crop": [
+      -1000.0,
+      1000.0,
+      -1000.0,
+      1000.0,
+      0.0,
+      1000.0
+    ]
+  },
+  "local_grid": {
+    "voxel_size_m": 2.0,
+    "margin_voxels": 2,
+    "grid_origin_m": [
+      -70.0,
+      -78.0,
+      -4.0
+    ],
+    "grid_shape": [
+      54,
+      77,
+      20
+    ],
+    "raw_shell_voxels": 3378,
+    "closed_shell_voxels": 4045,
+    "fill_mode": "directional",
+    "close_iterations": 1,
+    "require_ns": false,
+    "interior_voxels": 932,
+    "solid_voxels": 4977
+  },
+  "georeference": {
+    "anchor_latitude_deg": 37.4874741977344,
+    "anchor_longitude_deg": 139.9299222365892,
+    "anchor_altitude_m": 0.0,
+    "altitude_source": "local relative height; anchor altitude assumed 0 m",
+    "coordinate_convention": "+X East, +Y North, +Z Up"
+  },
+  "bstid": {
+    "presence": "XYH",
+    "internal_height_axis_name": "f",
+    "fine_zoom": {
+      "x": 24,
+      "y": 24,
+      "h": 14
+    },
+    "unique_fine_cells": 4977,
+    "normalizer": "indexed-batch",
+    "normalized_prefixes": 931,
+    "prefix_reduction_fraction": 0.8129395218002813,
+    "prefix_reduction_percent": 81.29395218002813,
+    "coarsened_prefix_count_by_axis": {
+      "x": 475,
+      "y": 387,
+      "h": 230
+    },
+    "anisotropic_prefix_count": 658,
+    "top_zoom_vectors": [
+      {
+        "zx": 24,
+        "zy": 24,
+        "zh": 14,
+        "count": 237
+      },
+      {
+        "zx": 23,
+        "zy": 24,
+        "zh": 14,
+        "count": 131
+      },
+      {
+        "zx": 24,
+        "zy": 23,
+        "zh": 14,
+        "count": 111
+      },
+      {
+        "zx": 23,
+        "zy": 23,
+        "zh": 14,
+        "count": 59
+      },
+      {
+        "zx": 22,
+        "zy": 24,
+        "zh": 14,
+        "count": 54
+      },
+      {
+        "zx": 24,
+        "zy": 24,
+        "zh": 13,
+        "count": 46
+      },
+      {
+        "zx": 23,
+        "zy": 24,
+        "zh": 13,
+        "count": 39
+      },
+      {
+        "zx": 23,
+        "zy": 23,
+        "zh": 13,
+        "count": 35
+      },
+      {
+        "zx": 22,
+        "zy": 23,
+        "zh": 14,
+        "count": 33
+      },
+      {
+        "zx": 24,
+        "zy": 23,
+        "zh": 13,
+        "count": 30
+      },
+      {
+        "zx": 23,
+        "zy": 22,
+        "zh": 14,
+        "count": 15
+      },
+      {
+        "zx": 22,
+        "zy": 23,
+        "zh": 13,
+        "count": 14
+      },
+      {
+        "zx": 24,
+        "zy": 22,
+        "zh": 14,
+        "count": 12
+      },
+      {
+        "zx": 21,
+        "zy": 24,
+        "zh": 14,
+        "count": 11
+      },
+      {
+        "zx": 22,
+        "zy": 22,
+        "zh": 14,
+        "count": 11
+      },
+      {
+        "zx": 22,
+        "zy": 24,
+        "zh": 13,
+        "count": 11
+      },
+      {
+        "zx": 21,
+        "zy": 23,
+        "zh": 14,
+        "count": 9
+      },
+      {
+        "zx": 21,
+        "zy": 22,
+        "zh": 14,
+        "count": 5
+      },
+      {
+        "zx": 23,
+        "zy": 22,
+        "zh": 13,
+        "count": 5
+      },
+      {
+        "zx": 23,
+        "zy": 23,
+        "zh": 12,
+        "count": 5
+      },
+      {
+        "zx": 22,
+        "zy": 22,
+        "zh": 13,
+        "count": 4
+      },
+      {
+        "zx": 24,
+        "zy": 23,
+        "zh": 12,
+        "count": 4
+      },
+      {
+        "zx": 21,
+        "zy": 22,
+        "zh": 13,
+        "count": 3
+      },
+      {
+        "zx": 22,
+        "zy": 21,
+        "zh": 14,
+        "count": 3
+      },
+      {
+        "zx": 23,
+        "zy": 24,
+        "zh": 12,
+        "count": 3
+      },
+      {
+        "zx": 24,
+        "zy": 21,
+        "zh": 13,
+        "count": 3
+      },
+      {
+        "zx": 24,
+        "zy": 22,
+        "zh": 13,
+        "count": 3
+      },
+      {
+        "zx": 24,
+        "zy": 24,
+        "zh": 12,
+        "count": 3
+      },
+      {
+        "zx": 20,
+        "zy": 24,
+        "zh": 14,
+        "count": 2
+      },
+      {
+        "zx": 21,
+        "zy": 24,
+        "zh": 13,
+        "count": 2
+      }
+    ],
+    "normalization_seconds": 1.8312723999999996
+  },
+  "verification": {
+    "requested": true,
+    "passed": true,
+    "fine_atom_count": 4977,
+    "normalized_atom_count": 4977,
+    "seconds": 0.03800359999999969
+  },
+  "outputs": {
+    "shell_voxels_ply": "tsuruga_2m_shell_voxels.ply",
+    "solid_voxels_ply": "tsuruga_2m_solid_voxels.ply",
+    "normalized_prefixes_csv": "tsuruga_2m_normalized_prefixes.csv",
+    "stats_json": "tsuruga_2m_stats.json"
+  },
+  "total_seconds": 2.0355351
+}

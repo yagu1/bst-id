@@ -1,0 +1,5 @@
+﻿representation,records,key_bits,attribute_bits,total_bits,key_KiB,total_KiB,record_ratio_vs_fixed_dyadic,total_bit_ratio_vs_fixed_dyadic,definition
+sampled_fixed_grid_1s,53490587,5616511635,1818679958,7435191593,685609.330444,907616.161255,57.38779195,56.94532247,one z21/z21/H12 XYH atom + 32-bit timestamp for every active cell-second
+fixed_grid_exact_intervals,107670,14750790,3660780,18411570,1800.633545,2247.506104,0.1155146,0.14101221,fixed z21/z21/H12 XYH atoms with maximal exact start/end uint32 intervals; no spatial merging
+fixed_grid_dyadic_T,932090,98876145,31691060,130567205,12069.841919,15938.379517,1.0,1.0,fixed z21/z21/H12 XYH atoms with exact dyadic BST-ID T-prefix cover; no spatial merging
+BST_ID_normalized_XYHT,240360,25246504,8172240,33418744,3081.848633,4079.436523,0.25787209,0.25595052,exact-attribute XYHT prefix sets normalized by independent x/y/h/t binary sibling merging

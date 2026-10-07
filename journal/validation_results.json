@@ -5,112 +5,112 @@
       "cases": 7688,
       "passed": 7688,
       "failed": 0,
-      "seconds": 0.2284
+      "seconds": 0.5532
     },
     {
       "test": "2D exhaustive Boolean (depth 1-2)",
       "cases": 3888,
       "passed": 3888,
       "failed": 0,
-      "seconds": 0.1751
+      "seconds": 0.4389
     },
     {
       "test": "3D randomized Boolean",
       "cases": 4500,
       "passed": 4500,
       "failed": 0,
-      "seconds": 0.3638
+      "seconds": 0.9002
     },
     {
       "test": "4D randomized Boolean",
       "cases": 3000,
       "passed": 3000,
       "failed": 0,
-      "seconds": 0.5494
+      "seconds": 1.3514
     },
     {
       "test": "1D normalization properties",
       "cases": 4000,
       "passed": 4000,
       "failed": 0,
-      "seconds": 0.079
+      "seconds": 0.2088
     },
     {
       "test": "2D normalization properties",
       "cases": 3200,
       "passed": 3200,
       "failed": 0,
-      "seconds": 0.1337
+      "seconds": 0.3627
     },
     {
       "test": "3D normalization properties",
       "cases": 1600,
       "passed": 1600,
       "failed": 0,
-      "seconds": 0.1138
+      "seconds": 0.2877
     },
     {
       "test": "4D normalization properties",
       "cases": 800,
       "passed": 800,
       "failed": 0,
-      "seconds": 0.105
+      "seconds": 0.2661
     },
     {
       "test": "1D refine/coarsen properties",
       "cases": 2000,
       "passed": 2000,
       "failed": 0,
-      "seconds": 0.0115
+      "seconds": 0.0316
     },
     {
       "test": "2D refine/coarsen properties",
       "cases": 1600,
       "passed": 1600,
       "failed": 0,
-      "seconds": 0.0182
+      "seconds": 0.0496
     },
     {
       "test": "3D refine/coarsen properties",
       "cases": 800,
       "passed": 800,
       "failed": 0,
-      "seconds": 0.0117
+      "seconds": 0.025
     },
     {
       "test": "4D refine/coarsen properties",
       "cases": 400,
       "passed": 400,
       "failed": 0,
-      "seconds": 0.0056
+      "seconds": 0.0128
     },
     {
       "test": "1D morphology/frontier reference semantics + closure",
       "cases": 1800,
       "passed": 1800,
       "failed": 0,
-      "seconds": 0.4578
+      "seconds": 1.1547
     },
     {
       "test": "2D morphology/frontier reference semantics + closure",
       "cases": 1200,
       "passed": 1200,
       "failed": 0,
-      "seconds": 4.6835
+      "seconds": 13.4546
     },
     {
       "test": "XYHT Cell descriptor -> BST-ID int -> descriptor",
       "cases": 2000,
       "passed": 2000,
       "failed": 0,
-      "seconds": 0.0211
+      "seconds": 0.0458
     },
     {
       "test": "XYHT reserved-route descendant membership",
       "cases": 256,
       "passed": 256,
       "failed": 0,
-      "seconds": 0.0008
+      "seconds": 0.0018
     }
   ],
   "failures": [],

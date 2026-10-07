@@ -1,0 +1,99 @@
+{
+  "input_file": "C:\\work\\bst-id\\journal\\aizu_demo\\utm_scenario.json",
+  "input_file_bytes": 81542074,
+  "flight_count": 34,
+  "fixed_grid": {
+    "x_zoom": 21,
+    "y_zoom": 21,
+    "h_zoom": 12
+  },
+  "attribute_model": {
+    "semantic_rule": "cells/prefixes merge only when the exact attribute value is identical",
+    "scenario_attribute": "exact active reservation flight set",
+    "comparison_encoding": "34-bit flight-set bitmask per record",
+    "note": "The flight-set attribute is used only as a controlled scenario encoding. Application-specific attribute dictionaries/metadata are excluded."
+  },
+  "representations": [
+    {
+      "representation": "sampled_fixed_grid_1s",
+      "records": 53490587,
+      "key_bits": 5616511635,
+      "attribute_bits": 1818679958,
+      "total_bits": 7435191593,
+      "definition": "one z21/z21/H12 XYH atom + 32-bit timestamp for every active cell-second",
+      "key_KiB": 685609.330444,
+      "total_KiB": 907616.161255,
+      "record_ratio_vs_fixed_dyadic": 57.38779195,
+      "total_bit_ratio_vs_fixed_dyadic": 56.94532247
+    },
+    {
+      "representation": "fixed_grid_exact_intervals",
+      "records": 107670,
+      "key_bits": 14750790,
+      "attribute_bits": 3660780,
+      "total_bits": 18411570,
+      "definition": "fixed z21/z21/H12 XYH atoms with maximal exact start/end uint32 intervals; no spatial merging",
+      "key_KiB": 1800.633545,
+      "total_KiB": 2247.506104,
+      "record_ratio_vs_fixed_dyadic": 0.1155146,
+      "total_bit_ratio_vs_fixed_dyadic": 0.14101221
+    },
+    {
+      "representation": "fixed_grid_dyadic_T",
+      "records": 932090,
+      "key_bits": 98876145,
+      "attribute_bits": 31691060,
+      "total_bits": 130567205,
+      "definition": "fixed z21/z21/H12 XYH atoms with exact dyadic BST-ID T-prefix cover; no spatial merging",
+      "key_KiB": 12069.841919,
+      "total_KiB": 15938.379517,
+      "record_ratio_vs_fixed_dyadic": 1.0,
+      "total_bit_ratio_vs_fixed_dyadic": 1.0
+    },
+    {
+      "representation": "BST_ID_normalized_XYHT",
+      "records": 240360,
+      "key_bits": 25246504,
+      "attribute_bits": 8172240,
+      "total_bits": 33418744,
+      "definition": "exact-attribute XYHT prefix sets normalized by independent x/y/h/t binary sibling merging",
+      "key_KiB": 3081.848633,
+      "total_KiB": 4079.436523,
+      "record_ratio_vs_fixed_dyadic": 0.25787209,
+      "total_bit_ratio_vs_fixed_dyadic": 0.25595052
+    }
+  ],
+  "proposed_vs_fixed_dyadic": {
+    "record_reduction_fraction": 0.7421279061034878,
+    "record_compression_factor": 3.8778914960891995,
+    "key_bit_reduction_fraction": 0.7446653689825792,
+    "key_bit_compression_factor": 3.916429181640357,
+    "total_bit_reduction_fraction_with_attribute_mask": 0.7440494801125597,
+    "total_bit_compression_factor_with_attribute_mask": 3.907005152557499
+  },
+  "proposed_vs_fixed_exact_intervals": {
+    "record_ratio": 2.2323767066035107,
+    "key_bit_ratio": 1.7115357211376476,
+    "note": "The exact-interval baseline is intentionally strong: it permits arbitrary start/end intervals, whereas BST-ID uses dyadic T prefixes."
+  },
+  "normalization": {
+    "policy": "deterministic x->y->h->t binary sibling merging; restart from x after each merge layer; no claim of global minimum cover",
+    "binary_merge_count_total": 691730,
+    "binary_merge_count_by_axis": {
+      "x": 332006,
+      "y": 227458,
+      "h": 132266,
+      "t": 0
+    },
+    "final_spatially_merged_records": 216818,
+    "final_spatially_merged_fraction": 0.9020552504576469,
+    "final_anisotropic_xy_records": 181993,
+    "final_anisotropic_xy_fraction": 0.7571684140455983,
+    "final_records_coarsened_by_axis": {
+      "x": 116538,
+      "y": 103013,
+      "h": 108938,
+      "t": 203943
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "representation": {
+    "bitmap_fine_cells": 43694,
+    "normalized_prefixes": 5567,
+    "normalization_reduction_percent": 87.25912024534261
+  },
+  "fine_zoom": {
+    "x": 25,
+    "y": 25,
+    "h": 15
+  },
+  "maximum_inscribed_bstid_cell": {
+    "zx": 22,
+    "ix": 3727451,
+    "zy": 22,
+    "iy": 1625411,
+    "zh": 11,
+    "ih": 1024,
+    "fine_atom_capacity": 1024,
+    "coarsening_bits": {
+      "x": 3,
+      "y": 3,
+      "h": 4
+    },
+    "local_min_m": [
+      -20.928787525094748,
+      20.952454738822052,
+      0.5
+    ],
+    "local_max_m": [
+      -13.337910168860974,
+      28.511257949644268,
+      16.49951171875
+    ],
+    "metric_volume_m3": 918.0191535558831,
+    "fraction_of_object_fine_atoms": 0.023435711997070535
+  },
+  "minimum_enclosing_bstid": {
+    "mode": "minimum_valid_cover",
+    "single_cell_available": false,
+    "cell_count": 2,
+    "cells": [
+      {
+        "zx": 16,
+        "ix": 58241,
+        "zy": 15,
+        "iy": 12698,
+        "zh": 12,
+        "ih": 2047,
+        "fine_atom_capacity": 4194304,
+        "coarsening_bits": {
+          "x": 9,
+          "y": 10,
+          "h": 3
+        },
+        "root_bits": {
+          "x": 1,
+          "y": 0,
+          "h": 0
+        },
+        "occupied_fine_cells_in_partition": 14966,
+        "local_min_m": [
+          -225.89445295173311,
+          -432.5841982785551,
+          -7.499755859375
+        ],
+        "local_max_m": [
+          259.94738512220874,
+          534.9385580014425,
+          0.5
+        ],
+        "metric_volume_m3": 3760389.512832543
+      },
+      {
+        "zx": 16,
+        "ix": 58241,
+        "zy": 15,
+        "iy": 12698,
+        "zh": 10,
+        "ih": 512,
+        "fine_atom_capacity": 16777216,
+        "coarsening_bits": {
+          "x": 9,
+          "y": 10,
+          "h": 5
+        },
+        "root_bits": {
+          "x": 1,
+          "y": 0,
+          "h": 1
+        },
+        "occupied_fine_cells_in_partition": 28728,
+        "local_min_m": [
+          -225.89445295173311,
+          -432.5841982785551,
+          0.5
+        ],
+        "local_max_m": [
+          259.94738512220874,
+          534.9385580014425,
+          32.4990234375
+        ],
+        "metric_volume_m3": 15041558.051330172
+      }
+    ],
+    "total_fine_atom_capacity": 20971520,
+    "total_metric_volume_m3": 18801947.564162716,
+    "object_occupancy_fraction_of_enclosing_fine_capacity": 0.002083492279052734
+  },
+  "visualization": {
+    "bitmap": "Open3D VoxelGrid from solid fine-grid centers",
+    "hierarchy": "Filled boxes from normalized BST-ID prefixes",
+    "hierarchy_visual_shrink": 0.96,
+    "keys": {
+      "B": "bitmap only",
+      "H": "hierarchical only",
+      "I": "toggle maximum inscribed cell",
+      "E": "toggle minimum enclosing cell/cover",
+      "A": "show all",
+      "C": "hide bitmap/hierarchy",
+      "P": "save screenshot"
+    }
+  },
+  "outputs": {
+    "report_json": "tsuruga_bstid_visualizer_report.json",
+    "hierarchy_obj": "tsuruga_hierarchical_bstid.obj",
+    "screenshot_path": "tsuruga_bstid_visualizer.png"
+  }
+}

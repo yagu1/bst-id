@@ -1,0 +1,320 @@
+{
+  "pipeline": "point cloud -> direct fine BST-ID shell -> BST-ID-index fill -> Normalize",
+  "input": {
+    "ply": "tsuruga_aligned.ply",
+    "transform_json": "tsuruga_enu_anchor_transform.json",
+    "input_points": 280335,
+    "points_after_crop": 157239,
+    "min_u_m": 0.0,
+    "horizontal_crop": null
+  },
+  "georeference": {
+    "anchor_latitude_deg": 37.4874741977344,
+    "anchor_longitude_deg": 139.9299222365892,
+    "height_origin_m": 0.5,
+    "height_origin_source": "local relative height; U=0 aligned to a BST-ID H boundary",
+    "local_u0_aligned_to_h_boundary": true
+  },
+  "fine_grid": {
+    "zx": 24,
+    "zy": 24,
+    "zh": 14,
+    "raw_shell_cells": 3677,
+    "closed_shell_cells": 4429,
+    "fill_mode": "directional",
+    "require_ns": false,
+    "close_iterations": 1,
+    "interior_cells": 1037,
+    "solid_fine_cells": 5466,
+    "dense_window_shape": [
+      55,
+      81,
+      19
+    ]
+  },
+  "normalization": {
+    "normalizer": "indexed-batch",
+    "normalized_prefixes": 908,
+    "reduction_fraction": 0.8338821807537504,
+    "reduction_percent": 83.38821807537504,
+    "seconds": 1.5315032,
+    "zoom_vectors": [
+      {
+        "zx": 24,
+        "zy": 24,
+        "zh": 14,
+        "count": 204
+      },
+      {
+        "zx": 23,
+        "zy": 24,
+        "zh": 14,
+        "count": 153
+      },
+      {
+        "zx": 24,
+        "zy": 23,
+        "zh": 14,
+        "count": 98
+      },
+      {
+        "zx": 22,
+        "zy": 24,
+        "zh": 14,
+        "count": 61
+      },
+      {
+        "zx": 23,
+        "zy": 23,
+        "zh": 14,
+        "count": 61
+      },
+      {
+        "zx": 23,
+        "zy": 24,
+        "zh": 13,
+        "count": 41
+      },
+      {
+        "zx": 22,
+        "zy": 23,
+        "zh": 14,
+        "count": 39
+      },
+      {
+        "zx": 24,
+        "zy": 24,
+        "zh": 13,
+        "count": 38
+      },
+      {
+        "zx": 23,
+        "zy": 23,
+        "zh": 13,
+        "count": 23
+      },
+      {
+        "zx": 24,
+        "zy": 22,
+        "zh": 14,
+        "count": 20
+      },
+      {
+        "zx": 22,
+        "zy": 24,
+        "zh": 13,
+        "count": 17
+      },
+      {
+        "zx": 23,
+        "zy": 22,
+        "zh": 14,
+        "count": 17
+      },
+      {
+        "zx": 21,
+        "zy": 23,
+        "zh": 14,
+        "count": 16
+      },
+      {
+        "zx": 22,
+        "zy": 22,
+        "zh": 14,
+        "count": 16
+      },
+      {
+        "zx": 21,
+        "zy": 24,
+        "zh": 14,
+        "count": 15
+      },
+      {
+        "zx": 24,
+        "zy": 23,
+        "zh": 13,
+        "count": 13
+      },
+      {
+        "zx": 22,
+        "zy": 23,
+        "zh": 13,
+        "count": 11
+      },
+      {
+        "zx": 22,
+        "zy": 22,
+        "zh": 13,
+        "count": 9
+      },
+      {
+        "zx": 21,
+        "zy": 22,
+        "zh": 14,
+        "count": 8
+      },
+      {
+        "zx": 20,
+        "zy": 24,
+        "zh": 14,
+        "count": 7
+      },
+      {
+        "zx": 20,
+        "zy": 23,
+        "zh": 14,
+        "count": 6
+      },
+      {
+        "zx": 20,
+        "zy": 22,
+        "zh": 14,
+        "count": 4
+      },
+      {
+        "zx": 22,
+        "zy": 21,
+        "zh": 14,
+        "count": 4
+      },
+      {
+        "zx": 23,
+        "zy": 22,
+        "zh": 13,
+        "count": 4
+      },
+      {
+        "zx": 24,
+        "zy": 22,
+        "zh": 13,
+        "count": 4
+      },
+      {
+        "zx": 21,
+        "zy": 21,
+        "zh": 13,
+        "count": 2
+      },
+      {
+        "zx": 21,
+        "zy": 22,
+        "zh": 13,
+        "count": 2
+      },
+      {
+        "zx": 21,
+        "zy": 23,
+        "zh": 13,
+        "count": 2
+      },
+      {
+        "zx": 21,
+        "zy": 24,
+        "zh": 13,
+        "count": 2
+      },
+      {
+        "zx": 22,
+        "zy": 21,
+        "zh": 13,
+        "count": 2
+      },
+      {
+        "zx": 23,
+        "zy": 24,
+        "zh": 12,
+        "count": 2
+      },
+      {
+        "zx": 20,
+        "zy": 23,
+        "zh": 13,
+        "count": 1
+      },
+      {
+        "zx": 21,
+        "zy": 21,
+        "zh": 14,
+        "count": 1
+      },
+      {
+        "zx": 21,
+        "zy": 22,
+        "zh": 12,
+        "count": 1
+      },
+      {
+        "zx": 21,
+        "zy": 23,
+        "zh": 12,
+        "count": 1
+      },
+      {
+        "zx": 22,
+        "zy": 23,
+        "zh": 12,
+        "count": 1
+      },
+      {
+        "zx": 23,
+        "zy": 21,
+        "zh": 14,
+        "count": 1
+      },
+      {
+        "zx": 24,
+        "zy": 24,
+        "zh": 12,
+        "count": 1
+      }
+    ]
+  },
+  "maximum_inscribed_cell": {
+    "zx": 22,
+    "ix": 3727452,
+    "zy": 21,
+    "iy": 812705,
+    "zh": 11,
+    "ih": 1024,
+    "fine_atom_capacity": 256,
+    "coarsening_bits": {
+      "x": 2,
+      "y": 3,
+      "h": 3
+    },
+    "west": 139.92977142333984,
+    "south": 37.48766298093671,
+    "east": 139.92985725402832,
+    "north": 37.48779919143747,
+    "bottom_u": 0.0,
+    "top_u": 15.99951171875,
+    "metric_volume_m3_approx": 1839.2481776853467
+  },
+  "minimum_enclosing": {
+    "mode": "single_cell",
+    "cell_count": 1,
+    "cells": [
+      {
+        "zx": 16,
+        "ix": 58241,
+        "zy": 15,
+        "iy": 12698,
+        "zh": 10,
+        "ih": 512,
+        "west": 139.9273681640625,
+        "south": 37.483576550426996,
+        "east": 139.932861328125,
+        "north": 37.49229399862877,
+        "bottom_u": 0.0,
+        "top_u": 31.9990234375
+      }
+    ]
+  },
+  "verification": {
+    "requested": true,
+    "passed": true,
+    "fine_atoms": 5466,
+    "normalized_atoms": 5466
+  },
+  "total_seconds": 2.0572519
+}

@@ -1,0 +1,254 @@
+{
+  "input": {
+    "ply": "tsuruga_aligned.ply",
+    "transform_json": "tsuruga_enu_anchor_transform.json",
+    "original_point_count": 280335,
+    "point_count_after_crop": 280335,
+    "crop": null
+  },
+  "local_grid": {
+    "voxel_size_m": 1.0,
+    "margin_voxels": 2,
+    "grid_origin_m": [
+      -67.0,
+      -76.0,
+      -6.0
+    ],
+    "grid_shape": [
+      108,
+      150,
+      38
+    ],
+    "raw_shell_voxels": 23494,
+    "closed_shell_voxels": 28957,
+    "fill_mode": "directional",
+    "close_iterations": 1,
+    "require_ns": false,
+    "interior_voxels": 14737,
+    "solid_voxels": 43694
+  },
+  "georeference": {
+    "anchor_latitude_deg": 37.4874741977344,
+    "anchor_longitude_deg": 139.9299222365892,
+    "anchor_altitude_m": 0.0,
+    "altitude_source": "local relative height; anchor altitude assumed 0 m",
+    "coordinate_convention": "+X East, +Y North, +Z Up"
+  },
+  "bstid": {
+    "presence": "XYH",
+    "internal_height_axis_name": "f",
+    "fine_zoom": {
+      "x": 25,
+      "y": 25,
+      "h": 15
+    },
+    "unique_fine_cells": 43694,
+    "normalizer": "indexed-batch",
+    "normalized_prefixes": 5567,
+    "prefix_reduction_fraction": 0.8725912024534261,
+    "prefix_reduction_percent": 87.25912024534261,
+    "coarsened_prefix_count_by_axis": {
+      "x": 3166,
+      "y": 2440,
+      "h": 1293
+    },
+    "anisotropic_prefix_count": 4276,
+    "top_zoom_vectors": [
+      {
+        "zx": 25,
+        "zy": 25,
+        "zh": 15,
+        "count": 1184
+      },
+      {
+        "zx": 24,
+        "zy": 25,
+        "zh": 15,
+        "count": 714
+      },
+      {
+        "zx": 25,
+        "zy": 24,
+        "zh": 15,
+        "count": 528
+      },
+      {
+        "zx": 23,
+        "zy": 25,
+        "zh": 15,
+        "count": 377
+      },
+      {
+        "zx": 24,
+        "zy": 24,
+        "zh": 15,
+        "count": 355
+      },
+      {
+        "zx": 25,
+        "zy": 25,
+        "zh": 14,
+        "count": 255
+      },
+      {
+        "zx": 23,
+        "zy": 24,
+        "zh": 15,
+        "count": 206
+      },
+      {
+        "zx": 24,
+        "zy": 25,
+        "zh": 14,
+        "count": 175
+      },
+      {
+        "zx": 24,
+        "zy": 23,
+        "zh": 15,
+        "count": 158
+      },
+      {
+        "zx": 22,
+        "zy": 25,
+        "zh": 15,
+        "count": 145
+      },
+      {
+        "zx": 25,
+        "zy": 23,
+        "zh": 15,
+        "count": 145
+      },
+      {
+        "zx": 25,
+        "zy": 24,
+        "zh": 14,
+        "count": 123
+      },
+      {
+        "zx": 23,
+        "zy": 23,
+        "zh": 15,
+        "count": 105
+      },
+      {
+        "zx": 22,
+        "zy": 24,
+        "zh": 15,
+        "count": 98
+      },
+      {
+        "zx": 23,
+        "zy": 25,
+        "zh": 14,
+        "count": 98
+      },
+      {
+        "zx": 24,
+        "zy": 24,
+        "zh": 14,
+        "count": 94
+      },
+      {
+        "zx": 23,
+        "zy": 24,
+        "zh": 14,
+        "count": 58
+      },
+      {
+        "zx": 22,
+        "zy": 23,
+        "zh": 15,
+        "count": 52
+      },
+      {
+        "zx": 24,
+        "zy": 23,
+        "zh": 14,
+        "count": 43
+      },
+      {
+        "zx": 24,
+        "zy": 22,
+        "zh": 15,
+        "count": 42
+      },
+      {
+        "zx": 23,
+        "zy": 22,
+        "zh": 15,
+        "count": 41
+      },
+      {
+        "zx": 24,
+        "zy": 25,
+        "zh": 13,
+        "count": 40
+      },
+      {
+        "zx": 25,
+        "zy": 25,
+        "zh": 13,
+        "count": 40
+      },
+      {
+        "zx": 25,
+        "zy": 23,
+        "zh": 14,
+        "count": 36
+      },
+      {
+        "zx": 22,
+        "zy": 25,
+        "zh": 14,
+        "count": 33
+      },
+      {
+        "zx": 25,
+        "zy": 22,
+        "zh": 15,
+        "count": 32
+      },
+      {
+        "zx": 22,
+        "zy": 22,
+        "zh": 15,
+        "count": 30
+      },
+      {
+        "zx": 24,
+        "zy": 24,
+        "zh": 13,
+        "count": 30
+      },
+      {
+        "zx": 23,
+        "zy": 23,
+        "zh": 14,
+        "count": 28
+      },
+      {
+        "zx": 25,
+        "zy": 24,
+        "zh": 13,
+        "count": 25
+      }
+    ],
+    "normalization_seconds": 21.0005089
+  },
+  "verification": {
+    "requested": true,
+    "passed": true,
+    "fine_atom_count": 43694,
+    "normalized_atom_count": 43694,
+    "seconds": 0.5016080999999986
+  },
+  "outputs": {
+    "shell_voxels_ply": "tsuruga_1m_shell_voxels.ply",
+    "solid_voxels_ply": "tsuruga_1m_solid_voxels.ply",
+    "normalized_prefixes_csv": "tsuruga_1m_normalized_prefixes.csv",
+    "stats_json": "tsuruga_1m_stats.json"
+  },
+  "total_seconds": 22.0460863
+}

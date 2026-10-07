@@ -1,0 +1,194 @@
+Trie-indexed Normalize comparison
+=================================
+
+This bundle extends the previously supplied bst_id/region_index.py.
+
+FILES
+-----
+
+1. Replace/add:
+   bst_id/region_index.py
+
+2. Add:
+   tests/test_region_indexed_normalize.py
+
+3. Add:
+   journal/run_normalize_benchmark.py
+
+
+IMPORTANT SCOPE
+---------------
+
+Two indexed normalizers are provided.
+
+A. normalize_indexed()
+   - N1 subsumption removal uses the multi-axis prefix index.
+   - N2 deliberately keeps the CURRENT one-sibling-pair-then-restart policy.
+   - This is the clean apples-to-apples comparison for "Trie-izing Normalize".
+
+B. normalize_indexed_batch()
+   - N1 is indexed as above.
+   - N2 merges all currently available sibling pairs on the selected axis
+     before restarting.
+   - This is an optimized experimental variant.
+   - The supplied tests require its FINAL OUTPUT to be exactly equal to the
+     current reference normalize() on targeted and randomized workloads.
+   - Do not use it in the paper if this exact-output test fails.
+
+
+PLACEMENT
+---------
+
+Repository layout:
+
+  bst-id/
+  ├─ bst_id/
+  │  ├─ region_algebra.py
+  │  ├─ region_index.py            <-- replace with bundle version
+  │  └─ ...
+  ├─ tests/
+  │  ├─ test_region_algebra.py
+  │  ├─ test_region_index.py       <-- previous bundle, keep it
+  │  ├─ test_region_indexed_normalize.py  <-- add
+  │  └─ ...
+  └─ journal/
+     ├─ run_bst_validation.py
+     ├─ run_region_index_validation.py    <-- previous bundle, keep it
+     ├─ run_normalize_benchmark.py        <-- add
+     └─ ...
+
+
+DO NOT MODIFY YET
+-----------------
+
+No change is required yet to:
+
+  bst_id/region_algebra.py
+  bst_id/__init__.py
+  journal/run_bst_validation.py
+
+Keeping the new work separate makes it easy to compare against the existing
+reference implementation and preserves the manuscript's currently reported
+validation total until the new results are accepted.
+
+
+TEST
+----
+
+From repository root:
+
+  python -m pytest -q
+
+or only the new normalization tests:
+
+  python -m pytest -q tests/test_region_indexed_normalize.py
+
+
+BENCHMARK
+---------
+
+Default:
+
+  python journal/run_normalize_benchmark.py
+
+Default sizes:
+  32 64 128 256
+
+Default repeats:
+  3
+
+Optional mixed random 4-D case:
+
+  python journal/run_normalize_benchmark.py --include-random
+
+Custom example:
+
+  python journal/run_normalize_benchmark.py \
+      --sizes 32 64 128 256 512 \
+      --repeats 5 \
+      --include-random
+
+
+OUTPUTS
+-------
+
+  journal/normalize_benchmark_raw.csv
+  journal/normalize_benchmark_summary.csv
+  journal/normalize_benchmark.json
+
+The benchmark compares:
+
+  reference
+      current region_algebra.normalize()
+
+  indexed_n1
+      Trie-indexed N1 +
+      current one-pair/restart N2 policy
+
+  indexed_n1_batch_n2
+      Trie-indexed N1 +
+      batch sibling merging
+
+
+SCENARIOS
+---------
+
+antichain_1d
+  Same-depth non-sibling prefixes.
+  This stresses the reference N1 linear retained-prefix scan.
+
+antichain_4d
+  Same idea in XYFT.
+  This exposes the cost/benefit of multi-axis postings.
+
+merge_heavy_1d
+  Complete sibling blocks.
+  This stresses the current one-merge-then-restart N2 behavior.
+
+anisotropic_merge_2d
+  Complete x-axis sibling structure while y remains fixed.
+  This is directly relevant to BST-ID anisotropic contraction.
+
+mixed_random_4d
+  Optional heterogeneous 4-D prefixes.
+
+
+INTERPRETATION
+--------------
+
+1. normalize_indexed() is the correct comparison for the effect of replacing
+   the N1 sequential subsumption scan with prefix-indexed lookup.
+
+2. It still retains one-pair N2, so the COMPLETE Normalize worst case should
+   not be described as O(NL).
+
+3. Per-axis trie traversal is bounded by L <= 32, but multi-axis lookup also
+   includes posting-set intersection/candidate cost.
+
+4. normalize_indexed_batch() tests whether batching sibling merges can remove
+   the repeated one-pair restart overhead without changing the final normal
+   form. The tests compare exact tuples, not only semantic occupancy.
+
+5. Wall-clock timing is Python-reference timing. Use it as implementation
+   evidence, not as a universal claim against optimized database/raster/tree
+   libraries.
+
+
+PAPER-SAFE COMPLEXITY WORDING BEFORE RESULTS
+--------------------------------------------
+
+Current reference:
+  - one N1 pass: O(N^2 m) worst case
+  - repeated one-pair N2 restarts can make complete normalization
+    conservatively O(N^3 m)
+
+Indexed N1 variant:
+  - per prefix: bounded-depth trie traversal plus multi-axis posting
+    intersection/candidate processing
+  - the sequential all-retained-prefix scan is removed
+  - complete normalization still includes repeated N2 restarts
+
+Batch N2 variant:
+  - reduces the number of restart cycles empirically
+  - do not state a new asymptotic bound until the implementation and workloads
+    have been analyzed after the benchmark.

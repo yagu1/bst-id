@@ -1,0 +1,13 @@
+test,cases,passed,failed,seconds
+1D indexed prefix queries vs linear reference,12000,12000,0,0.370883
+2D indexed prefix queries vs linear reference,12000,12000,0,0.426172
+3D indexed prefix queries vs linear reference,12000,12000,0,0.503896
+4D indexed prefix queries vs linear reference,12000,12000,0,0.520144
+1D indexed Intersection vs all-pairs reference,600,600,0,0.918758
+2D indexed Intersection vs all-pairs reference,600,600,0,0.927596
+3D indexed Intersection vs all-pairs reference,600,600,0,0.897577
+4D indexed Intersection vs all-pairs reference,600,600,0,1.125028
+1D incremental index add/discard integrity,2000,2000,0,0.092496
+2D incremental index add/discard integrity,2000,2000,0,0.107692
+3D incremental index add/discard integrity,2000,2000,0,0.135174
+4D incremental index add/discard integrity,2000,2000,0,0.148332

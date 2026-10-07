@@ -1,0 +1,92 @@
+{
+  "representation": {
+    "bitmap_fine_cells": 4977,
+    "normalized_prefixes": 931,
+    "normalization_reduction_percent": 81.29395218002813
+  },
+  "fine_zoom": {
+    "x": 24,
+    "y": 24,
+    "h": 14
+  },
+  "maximum_inscribed_bstid_cell": {
+    "zx": 22,
+    "ix": 3727452,
+    "zy": 21,
+    "iy": 812705,
+    "zh": 11,
+    "ih": 1024,
+    "fine_atom_capacity": 256,
+    "coarsening_bits": {
+      "x": 2,
+      "y": 3,
+      "h": 3
+    },
+    "local_min_m": [
+      -13.337922277127063,
+      20.952446039556797,
+      0.5
+    ],
+    "local_max_m": [
+      -5.747046594420556,
+      36.070023117037834,
+      16.49951171875
+    ],
+    "metric_volume_m3": 1836.0343384709167,
+    "fraction_of_object_fine_atoms": 0.05143660839863372
+  },
+  "minimum_enclosing_bstid": {
+    "mode": "single_cell",
+    "single_cell_available": true,
+    "cell_count": 1,
+    "cells": [
+      {
+        "zx": 16,
+        "ix": 58241,
+        "zy": 15,
+        "iy": 12698,
+        "zh": 10,
+        "ih": 512,
+        "fine_atom_capacity": 2097152,
+        "coarsening_bits": {
+          "x": 8,
+          "y": 9,
+          "h": 4
+        },
+        "local_min_m": [
+          -225.89445295173311,
+          -432.5841982785551,
+          0.5
+        ],
+        "local_max_m": [
+          259.94738512220874,
+          534.9385580014425,
+          32.4990234375
+        ],
+        "metric_volume_m3": 15041558.051330172
+      }
+    ],
+    "total_fine_atom_capacity": 2097152,
+    "total_metric_volume_m3": 15041558.051330172,
+    "object_occupancy_fraction_of_enclosing_fine_capacity": 0.002373218536376953
+  },
+  "visualization": {
+    "bitmap": "Open3D VoxelGrid from solid fine-grid centers",
+    "hierarchy": "Filled boxes from normalized BST-ID prefixes",
+    "hierarchy_visual_shrink": 1.0,
+    "keys": {
+      "B": "bitmap only",
+      "H": "hierarchical only",
+      "I": "toggle maximum inscribed cell",
+      "E": "toggle minimum enclosing cell/cover",
+      "A": "show all",
+      "C": "hide bitmap/hierarchy",
+      "P": "save screenshot"
+    }
+  },
+  "outputs": {
+    "report_json": "tsuruga_2m_visualizer_report.json",
+    "hierarchy_obj": "tsuruga_2m_hierarchical_bstid.obj",
+    "screenshot_path": "tsuruga_2m_visualizer.png"
+  }
+}
